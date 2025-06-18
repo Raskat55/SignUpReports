@@ -14,3 +14,6 @@ val BackgroundColor = Color(0xFFD9EAFA)
 val GradientRed = Color(0xFFDD6F4F)
 val GradientGreen = Color(0xFF4CC5B1)
 val GradientBlue = Color(0xFF4C93D5)
+
+val LogoShadow = Color(0xFF3D53BB)
+val ButtonShadow = Color(0xFF263238).copy(alpha = 0.3f)
