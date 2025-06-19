@@ -1,23 +1,48 @@
 package com.ortin.signupreport.screen
 
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.Button
+import androidx.compose.material3.ModalBottomSheet
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import java.lang.reflect.Modifier
+import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.sp
 
 @Composable
 fun RegistrationRole(){
-    Column(modifier = Modifier.background(Color.AVBbackground)) {
+    Column{
+        val modifier = Modifier
+            .background(Color.White)
+            .fillMaxSize()
 
-        Text(text = "Select your role")
-        Text(text = "for registration")
-        Button()
-
-
+        Text(text = "Select your role",
+            fontSize = 25.sp,
+            fontWeight = FontWeight.Bold)
+        Text(text = "for registration",
+            fontSize = 25.sp,
+            fontWeight = FontWeight.Bold)
+        //Button()
     }
+}
+@Composable
+fun LogoSreen(image: Int, modifier: Modifier = Modifier){
+    Image(
+        painter = painterResource(image)
+        contentDescription = null,
+        modifier
+    )
+}
+
+@Preview
+@Composable
+fun RegistrationRolePreview() {
+    RegistrationRole()
 }
