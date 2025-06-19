@@ -29,13 +29,15 @@ fun RegistrationRole(){
         Text(text = "for registration",
             fontSize = 25.sp,
             fontWeight = FontWeight.Bold)
-        //Button()
+
     }
+    LogoSreen(R.drawble.container)
 }
+// Logo of app
 @Composable
 fun LogoSreen(image: Int, modifier: Modifier = Modifier){
     Image(
-        painter = painterResource(image)
+        painter = painterResource(image),
         contentDescription = null,
         modifier
     )
