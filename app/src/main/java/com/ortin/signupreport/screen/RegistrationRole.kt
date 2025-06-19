@@ -1,28 +1,22 @@
 package com.ortin.signupreport.screen
 
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.material3.Button
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
+import java.lang.reflect.Modifier
 
 @Composable
 fun RegistrationRole(){
-    Box() {
+    Column(modifier = Modifier.background(Color.AVBbackground)) {
 
         Text(text = "Select your role")
         Text(text = "for registration")
-//        Button(
-//            onClick = TODO(),
-//            enabled = TODO(),
-//            shape = TODO(),
-//            colors = TODO(),
-//            elevation = TODO(),
-//            border = TODO(),
-//            contentPadding = TODO(),
-//            interactionSource = TODO(),
-//            content = TODO()
-//        )
+        Button()
 
 
     }
