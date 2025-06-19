@@ -48,7 +48,7 @@ fun LogoWithBackground(modifier: Modifier) {
             modifier = Modifier
                 .height(160.dp)
                 .width(106.dp),
-            painter = painterResource(R.drawable.logo_main_page),
+            painter = painterResource(R.drawable.logo_main_screen),
             contentDescription = "Logotype"
         )
     }
