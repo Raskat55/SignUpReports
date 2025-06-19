@@ -22,7 +22,7 @@ import com.ortin.signupreport.ui.theme.BackgroundColor
 import com.ortin.signupreport.ui.theme.LogoShadow
 
 @Composable
-fun LogoWithBackground(modifier: Modifier) {
+fun MainScreenLogoWithBackground(modifier: Modifier) {
     Box(
         modifier = modifier
             .size(236.dp)
@@ -56,13 +56,13 @@ fun LogoWithBackground(modifier: Modifier) {
 
 @Preview
 @Composable
-fun LogoWithBackgroundPreview() {
+fun MainScreenLogoWithBackgroundPreview() {
     Box(
         modifier = Modifier
             .fillMaxSize()
             .background(color = Color.White),
         contentAlignment = Alignment.Center,
     ) {
-        LogoWithBackground(Modifier)
+        MainScreenLogoWithBackground(Modifier)
     }
 }

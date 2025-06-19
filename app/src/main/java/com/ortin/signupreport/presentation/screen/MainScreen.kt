@@ -21,8 +21,8 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.ortin.signupreport.presentation.component.LogoWithBackground
 import com.ortin.signupreport.presentation.component.MainScreenButton
+import com.ortin.signupreport.presentation.component.MainScreenLogoWithBackground
 import com.ortin.signupreport.ui.theme.BackgroundColor
 
 @Composable
@@ -69,7 +69,7 @@ fun MainScreen() {
                 ),
             )
         }
-        LogoWithBackground(modifier = Modifier.padding(vertical = 34.dp))
+        MainScreenLogoWithBackground(modifier = Modifier.padding(vertical = 34.dp))
         MainScreenButton(
             modifier = Modifier.padding(top = 58.dp),
             buttonText = "Login",
