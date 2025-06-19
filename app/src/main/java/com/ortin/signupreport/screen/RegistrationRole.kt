@@ -14,7 +14,7 @@ import com.ortin.signupreport.component.LogoSreen
 
 @Composable
 fun RegistrationRole(){
-//    LogoSreen(R.drawable.contaener)
+    LogoSreen()
     Column{
         val modifier = Modifier
             .background(Color.White)
