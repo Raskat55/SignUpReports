@@ -23,15 +23,16 @@ fun RegistrationRole(){
         .padding(),
         contentAlignment = Alignment.TopCenter){
 
-        LogoSreen()
 
-        Column(){
+        Column (){
             val modifier = Modifier
                 .padding(10.dp)
                 .background(Color(0xD9EAFA))
                 .fillMaxSize()
             var contentAlignment = Alignment.Center
 
+
+            LogoSreen()
 
 
             Text(text = "Select your role",
