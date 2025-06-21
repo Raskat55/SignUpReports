@@ -42,13 +42,13 @@ fun RegistrationRole(modifier: Modifier = Modifier
 
     ){
         Box(modifier = Modifier // первый box для лого
-            .padding(1.dp)
+            .padding(10.dp)
             .size(103.dp, 103.dp)
             .background(myColor)
             .shadow(
                 elevation = 1.dp,
                 shape = RoundedCornerShape(2.dp))
-            .clip(RoundedCornerShape(2.dp)),
+            .clip(RoundedCornerShape(12.dp)),
             contentAlignment = Alignment.BottomCenter
         ){
             LogoSreen()  // лого
@@ -59,7 +59,7 @@ fun RegistrationRole(modifier: Modifier = Modifier
             .border(width = 1.dp, myColor, )
             .clip(RoundedCornerShape(12.dp))  // округление Box границ
             .fillMaxWidth()
-            .shadow(2.dp),
+            .shadow(5.dp, RoundedCornerShape(12.dp)),
             contentAlignment = Alignment.Center,
 
         ){
