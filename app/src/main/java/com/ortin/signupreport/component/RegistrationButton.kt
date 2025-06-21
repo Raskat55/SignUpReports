@@ -29,10 +29,7 @@ fun RegistrationCard(){
         Box(modifier = Modifier.fillMaxSize(),
             contentAlignment = Alignment.Center){
             Text(text = "Карточка")
-
         }
-
-
     }
 }
 
