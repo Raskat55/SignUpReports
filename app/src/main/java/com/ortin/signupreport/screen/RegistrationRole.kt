@@ -28,12 +28,13 @@ import com.ortin.signupreport.ui.theme.avb
 
 // Main table
 @Composable
-fun RegistrationRole(modifier: Modifier = Modifier.background(avb)
+fun RegistrationRole(modifier: Modifier = Modifier
 ){
 
     Column(modifier = Modifier // основная ось
+        .padding()
         .fillMaxWidth()
-        .padding(),
+        .background(avb),
         horizontalAlignment = Alignment.CenterHorizontally
 
     ){
