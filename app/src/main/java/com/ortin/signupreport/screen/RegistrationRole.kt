@@ -2,14 +2,16 @@ package com.ortin.signupreport.screen
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
-import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxHeight
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Card
 import androidx.compose.material3.Text
@@ -36,30 +38,32 @@ fun RegistrationRole(modifier: Modifier = Modifier
 
     Column(modifier = Modifier // основная ось
         .padding()
-        .fillMaxWidth()
+        .fillMaxSize()
         .background(myColor),
-        horizontalAlignment = Alignment.CenterHorizontally
+        horizontalAlignment = Alignment.CenterHorizontally,
 
     ){
         Box(modifier = Modifier // первый box для лого
-            .padding(10.dp)
-            .size(103.dp, 103.dp)
+            .padding(30.dp)
+            .clip(RoundedCornerShape(10.dp))
+            .height(103.dp)
+            .width(103.dp)
+
             .background(myColor)
+            //
             .shadow(
                 elevation = 1.dp,
-                shape = RoundedCornerShape(2.dp))
-            .clip(RoundedCornerShape(12.dp)),
+                shape = RoundedCornerShape(2.dp)),
             contentAlignment = Alignment.BottomCenter
         ){
             LogoSreen()  // лого
         }
 
         Box(modifier = Modifier  // второй box для текста
-            .padding(15.dp)
-            .border(width = 1.dp, myColor, )
+            .padding(10.dp, bottom = 10.dp)
             .clip(RoundedCornerShape(12.dp))  // округление Box границ
-            .fillMaxWidth()
-            .shadow(5.dp, RoundedCornerShape(12.dp)),
+            .fillMaxSize()
+            .shadow(1.dp),
             contentAlignment = Alignment.Center,
 
         ){
