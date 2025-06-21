@@ -45,31 +45,27 @@ fun RegistrationRole(modifier: Modifier = Modifier
     ){
         Box(modifier = Modifier // первый box для лого
             .padding(30.dp)
-            .clip(RoundedCornerShape(10.dp))
+            .clip(RoundedCornerShape(17.dp))
             .height(103.dp)
             .width(103.dp)
-
-            .background(myColor)
-            //
+            .background(Color.Black)
             .shadow(
-                elevation = 1.dp,
-                shape = RoundedCornerShape(2.dp)),
+                elevation = 2.dp,),
             contentAlignment = Alignment.BottomCenter
         ){
             LogoSreen()  // лого
         }
 
-        Box(modifier = Modifier  // второй box для текста
-            .padding(10.dp, bottom = 10.dp)
-            .clip(RoundedCornerShape(12.dp))  // округление Box границ
-            .fillMaxSize()
-            .shadow(1.dp),
-            contentAlignment = Alignment.Center,
-
+        Card(modifier = Modifier
+            .fillMaxWidth()
+            .padding(20.dp)
+            .background(myColor)
+            .shadow(5.dp, RoundedCornerShape(12.dp))
         ){
+
             Column(modifier = Modifier // основная ось
                 .fillMaxHeight()
-                .padding(10.dp),
+                .padding(20.dp),
                 horizontalAlignment = Alignment.CenterHorizontally)
             {
                 Text(text = "Step 1/4",
