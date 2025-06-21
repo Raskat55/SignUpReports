@@ -87,7 +87,7 @@ fun RegistrationRole(modifier: Modifier = Modifier.background(Color(0xD9EAFA))){
 
 //Registration Card
 @Composable
-fun RegistrationCard(){
+fun RegistrationCard(name: String){
     Card(
         modifier = Modifier
             .fillMaxWidth()
@@ -98,7 +98,17 @@ fun RegistrationCard(){
             },
         shape = RoundedCornerShape(10.dp),
     ){
-        // todo
+        Box(modifier = Modifier
+            .padding(15.dp)
+            .fillMaxWidth()
+        ){
+            Column(modifier = Modifier // основная ось
+                .fillMaxWidth()
+                .padding(10.dp),
+                horizontalAlignment = Alignment.CenterHorizontally) {
+
+            }
+        }
     }
 }
 
