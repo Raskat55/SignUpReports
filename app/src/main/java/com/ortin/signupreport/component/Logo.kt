@@ -1,12 +1,11 @@
 package com.ortin.signupreport.component
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.layout.requiredSize
 import androidx.compose.foundation.layout.size
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
-import com.ortin.signupreport.R // bastard
+import com.ortin.signupreport.R
 
 // Logo of app
 @Composable
@@ -15,6 +14,7 @@ fun LogoSreen(modifier: Modifier = Modifier){
     Image(
         painter = painterResource(id = R.drawable.logo),
         contentDescription = null,
-        modifier.size(103.dp)
+        modifier
+            .size(103.dp)
     )
 }

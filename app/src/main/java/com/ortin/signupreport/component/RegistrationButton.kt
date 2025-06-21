@@ -1,5 +1,6 @@
 package com.ortin.signupreport.component
 
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
@@ -16,7 +17,13 @@ import androidx.compose.ui.unit.dp
 @Composable
 fun RegistrationCard(){
     Card(
-        modifier = Modifier.fillMaxSize().padding(5.dp).shadow(5.dp),
+        modifier = Modifier
+            .fillMaxSize()
+            .padding(5.dp)
+            .shadow(5.dp)
+            .clickable(){  // для нажатия
+                        TODO()
+            },
         shape = RoundedCornerShape(10.dp),
     ){
         Box(modifier = Modifier.fillMaxSize(),
