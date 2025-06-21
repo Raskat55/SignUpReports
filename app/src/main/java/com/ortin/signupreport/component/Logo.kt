@@ -15,18 +15,7 @@ fun LogoSreen(modifier: Modifier = Modifier){
         painter = painterResource(id = R.drawable.logo_avb),
         contentDescription = null,
         modifier
-            .size(53.dp, 79.dp)
-
-    )
-}
-@Composable
-fun StepLogo(modifier: Modifier = Modifier){
-
-    Image(
-        painter = painterResource(id = R.drawable.step1),
-        contentDescription = null,
-        modifier
-            .size(320.dp, 17.dp)
+            .size(280.dp, 90.dp)
 
     )
 }
