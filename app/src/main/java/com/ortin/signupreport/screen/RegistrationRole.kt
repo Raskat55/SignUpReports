@@ -1,5 +1,6 @@
 package com.ortin.signupreport.screen
 
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
@@ -17,10 +18,12 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.ortin.signupreport.R
 import com.ortin.signupreport.component.LogoSreen
 
 
@@ -45,7 +48,8 @@ fun RegistrationRole(modifier: Modifier = Modifier.background(Color(0xD9EAFA))){
 
         Box(modifier = Modifier  // второй box для текста
             .padding()
-            .fillMaxSize()
+            .fillMaxSize(),
+            contentAlignment = Alignment.Center
         ){
             Column(modifier = Modifier // основная ось
                 .fillMaxHeight()
@@ -72,9 +76,9 @@ fun RegistrationRole(modifier: Modifier = Modifier.background(Color(0xD9EAFA))){
                           .padding(10.dp),
                           horizontalAlignment = Alignment.CenterHorizontally
                       ){
-                          RegistrationCard()
-                          RegistrationCard()
-                          RegistrationCard()
+                          RegistrationCard("School or University",R.drawable.univer_1)
+                          RegistrationCard("Founder", R.drawable.idea_1)
+                          RegistrationCard("Co-builder", R.drawable.hat_1)
                       }
                 }
             }
@@ -87,11 +91,15 @@ fun RegistrationRole(modifier: Modifier = Modifier.background(Color(0xD9EAFA))){
 
 //Registration Card
 @Composable
-fun RegistrationCard(name: String){
+fun RegistrationCard(
+    name: String,
+    imageId: Int,
+    modifier: Modifier = Modifier
+){
     Card(
         modifier = Modifier
             .fillMaxWidth()
-            .padding(5.dp)
+            .padding(10.dp)
             .shadow(5.dp)
             .clickable(){  // для нажатия
                 TODO()
@@ -105,7 +113,16 @@ fun RegistrationCard(name: String){
             Column(modifier = Modifier // основная ось
                 .fillMaxWidth()
                 .padding(10.dp),
-                horizontalAlignment = Alignment.CenterHorizontally) {
+                horizontalAlignment = Alignment.CenterHorizontally
+            ){
+                Image(
+                    painter = painterResource(id = imageId),
+                    contentDescription = null,
+                    modifier
+                        .size(120.dp, 60.dp)
+
+                )
+                Text(text = "$name", fontSize = 14.sp)
 
             }
         }
