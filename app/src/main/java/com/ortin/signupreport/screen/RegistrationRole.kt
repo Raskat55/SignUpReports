@@ -59,13 +59,15 @@ fun RegistrationRole(modifier: Modifier = Modifier
         Card(modifier = Modifier
             .fillMaxWidth()
             .padding(20.dp)
-            .background(myColor)
+            .background(Color(0xFFD9EAFA))
             .shadow(5.dp, RoundedCornerShape(12.dp))
         ){
 
             Column(modifier = Modifier // основная ось
                 .fillMaxHeight()
-                .padding(20.dp),
+                .padding()
+                .background(Color(0xFFD9EAFA)
+                ),
                 horizontalAlignment = Alignment.CenterHorizontally)
             {
                 Text(text = "Step 1/4",
