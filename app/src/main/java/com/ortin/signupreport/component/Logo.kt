@@ -15,7 +15,7 @@ fun LogoSreen(modifier: Modifier = Modifier){
         painter = painterResource(id = R.drawable.logo_avb),
         contentDescription = null,
         modifier
-            .size(280.dp, 90.dp)
+            .size(53.dp, 79.dp)
 
     )
 }

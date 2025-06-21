@@ -2,11 +2,11 @@ package com.ortin.signupreport.screen
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxHeight
-import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
@@ -16,6 +16,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
@@ -31,7 +32,7 @@ import com.ortin.signupreport.component.LogoSreen
 @Composable
 fun RegistrationRole(modifier: Modifier = Modifier
 ){
-    val myColor: Color = Color(0xFFA9DACF)
+    val myColor: Color = Color(0xFFD9EAFA)
 
     Column(modifier = Modifier // основная ось
         .padding()
@@ -48,11 +49,14 @@ fun RegistrationRole(modifier: Modifier = Modifier
             LogoSreen()  // лого
         }
 
-
         Box(modifier = Modifier  // второй box для текста
-            .padding()
-            .fillMaxSize(),
-            contentAlignment = Alignment.Center
+            .padding(15.dp)
+            .border(width = 1.dp, myColor, )
+            .clip(RoundedCornerShape(12.dp))  // округление Box границ
+            .fillMaxWidth()
+            .shadow(2.dp),
+            contentAlignment = Alignment.Center,
+
         ){
             Column(modifier = Modifier // основная ось
                 .fillMaxHeight()
@@ -71,7 +75,7 @@ fun RegistrationRole(modifier: Modifier = Modifier
                     fontWeight = FontWeight.Bold)
 
                 Box(modifier = Modifier
-                    .padding(15.dp)
+                    .padding(top = 120.dp)
                     .fillMaxWidth()
                 ){
                       Column(modifier = Modifier // основная ось
@@ -100,7 +104,7 @@ fun RegistrationCard(
     imageId: Int,
     modifier: Modifier = Modifier
 ){
-    val myColor: Color = Color(0xFFD2D2F3)
+    val myColor: Color = Color(0xFFD9EAFA)
 
     Card(
         modifier = Modifier
@@ -108,7 +112,7 @@ fun RegistrationCard(
             .background(myColor)
             .padding(1.dp)
             .background(myColor)
-            .shadow(5.dp)
+            .shadow(5.dp, RoundedCornerShape(12.dp)) // округление тени
             .clickable(){  // для нажатия
                 TODO()
             },
