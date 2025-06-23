@@ -50,10 +50,7 @@ fun RegistrationRole(modifier: Modifier = Modifier.background(Color(0xFFD9EAFA))
             .clip(RoundedCornerShape(17.dp))
             .height(103.dp)
             .width(103.dp)
-            .background(Color(0xFFD9EAFA))
-            .shadow(
-                elevation = 2.dp,),
-            contentAlignment = Alignment.BottomCenter
+            .background(Color(0xFFD9EAFA)) //////////
         ){
             LogoSreen()  // лого
         }
@@ -63,7 +60,7 @@ fun RegistrationRole(modifier: Modifier = Modifier.background(Color(0xFFD9EAFA))
             .background(Color(0xFFD9EAFA))
             .padding(start = 17.dp, end = 17.dp, top = 70.dp)
             .height(600.dp)
-            .shadow(5.dp, RoundedCornerShape(12.dp))
+            .shadow(5.dp, RoundedCornerShape(20.dp))
         ){
 
             Box(modifier = Modifier
@@ -146,7 +143,7 @@ fun RegistrationCard(
             .fillMaxWidth()
             .background(Color(0xFFD9EAFA))
             .padding(5.dp)
-            .shadow(5.dp, RoundedCornerShape(12.dp)) // округление тени
+            .shadow(5.dp, RoundedCornerShape(18.dp)) // округление тени
             .clickable(){  // для нажатия
                 TODO()
             },
