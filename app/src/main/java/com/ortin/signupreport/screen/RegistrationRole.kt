@@ -5,7 +5,6 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -23,6 +22,7 @@ import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -64,22 +64,29 @@ fun RegistrationRole(modifier: Modifier = Modifier
         ){
 
             Column(modifier = Modifier // основная ось
-                .fillMaxHeight()
+                .fillMaxWidth()
                 .padding()
                 .background(Color(0xFFD9EAFA)
                 ),
                 horizontalAlignment = Alignment.CenterHorizontally)
             {
                 Text(text = "Step 1/4",
-                    fontSize = 14.sp)
+                    modifier = Modifier.fillMaxWidth()
+                        .padding(end = 10.dp),
+                    color = R.color.textColor,
+                    fontSize = 14.sp,
+                    textAlign = TextAlign.Right
+                )
 
                 Text(text = "Select your role",
                     fontSize = 24.sp,
-                    fontWeight = FontWeight.Bold)
+                    fontWeight = FontWeight.Bold
+                )
 
                 Text(text = "for registration",
                     fontSize = 24.sp,
-                    fontWeight = FontWeight.Bold)
+                    fontWeight = FontWeight.Bold
+                )
 
                 Box(modifier = Modifier
                     .padding(top = 120.dp)
