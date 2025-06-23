@@ -13,7 +13,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
-import com.ortin.signupreport.screen.RegistrationRole
+import com.ortin.signupreport.screen.registration.RegistrationRole
 import com.ortin.signupreport.ui.theme.SignUpReportTheme
 
 class MainActivity : ComponentActivity() {

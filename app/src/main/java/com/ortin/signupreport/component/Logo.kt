@@ -40,7 +40,7 @@ fun LogoSreen(
                 painter = painterResource(id = R.drawable.logo_avb),
                 contentDescription = null,
                 modifier
-                    .size(53.dp, 79.dp)
+                    .size(80.dp, 100.dp)
             )
         }
     }
