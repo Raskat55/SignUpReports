@@ -46,7 +46,7 @@ fun RegistrationRole(modifier: Modifier = Modifier.background(Color(0xFFD9EAFA))
 
     ){
         Box(modifier = Modifier // первый box для лого
-            .padding(top = 60.dp)
+            .padding(top = 90.dp)
             .clip(RoundedCornerShape(17.dp))
             .height(103.dp)
             .width(103.dp)
@@ -58,7 +58,7 @@ fun RegistrationRole(modifier: Modifier = Modifier.background(Color(0xFFD9EAFA))
         Card(modifier = Modifier
             .fillMaxWidth()
             .background(Color(0xFFD9EAFA))
-            .padding(start = 17.dp, end = 17.dp, top = 70.dp)
+            .padding(start = 17.dp, end = 17.dp, top = 20.dp)
             .height(600.dp)
             .shadow(5.dp, RoundedCornerShape(20.dp))
         ){

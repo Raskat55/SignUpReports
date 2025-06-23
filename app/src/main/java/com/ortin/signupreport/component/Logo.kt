@@ -42,9 +42,6 @@ fun LogoSreen(
                 modifier
                     .size(53.dp, 79.dp)
             )
-
         }
     }
-
-
 }
