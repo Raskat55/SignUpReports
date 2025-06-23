@@ -22,7 +22,6 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
@@ -76,9 +75,8 @@ fun RegistrationRole(modifier: Modifier = Modifier
                 Text(text = "Step 1/4",
                     modifier = Modifier.fillMaxWidth()
                         .padding(end = 10.dp),
-                    style = TextStyle(),
                     fontSize = 14.sp,
-                    color = Color(R.color.textColor),
+//                    color = Color(0x4C93D5),
                     textAlign = TextAlign.Right
                 )
 
@@ -98,7 +96,7 @@ fun RegistrationRole(modifier: Modifier = Modifier
                 ){
                       Column(modifier = Modifier // основная ось
                           .fillMaxWidth()
-                          .padding(10.dp)
+                          .padding(horizontal = 10.dp, vertical = 16.dp)
                           .background(myColor),
                           horizontalAlignment = Alignment.CenterHorizontally
                       ){
@@ -128,7 +126,7 @@ fun RegistrationCard(
         modifier = Modifier
             .fillMaxWidth()
             .background(myColor)
-            .padding(1.dp)
+            .padding(5.dp)
             .background(myColor)
             .shadow(5.dp, RoundedCornerShape(12.dp)) // округление тени
             .clickable(){  // для нажатия
