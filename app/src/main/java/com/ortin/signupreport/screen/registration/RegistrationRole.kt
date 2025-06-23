@@ -120,7 +120,7 @@ fun RegistrationRole(modifier: Modifier = Modifier.background(Color(0xFFD9EAFA))
                 .width(100.dp)
                 .background(Color(0xFFD9EAFA)
                 ),
-                contentAlignment = Alignment.TopCenter
+                contentAlignment = Alignment.BottomCenter
             ){
                 LogoSreen()  // лого
             }

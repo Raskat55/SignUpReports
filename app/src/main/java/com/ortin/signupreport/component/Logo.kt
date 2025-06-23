@@ -33,14 +33,15 @@ fun LogoSreen(
             .fillMaxSize()
             .background(Color(0xFFD9EAFA)
             ),
-            contentAlignment = Alignment.BottomCenter
+            contentAlignment = Alignment.Center
         ){
 
             Image(
                 painter = painterResource(id = R.drawable.logo_avb),
                 contentDescription = null,
                 modifier
-                    .size(80.dp, 100.dp)
+                    .size(90.dp, 110.dp)
+                    .padding(top = 20.dp)
             )
         }
     }
