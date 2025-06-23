@@ -1,5 +1,6 @@
 package com.ortin.signupreport.screen
 
+import android.annotation.SuppressLint
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -21,6 +22,7 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
@@ -31,6 +33,7 @@ import com.ortin.signupreport.component.LogoSreen
 
 
 // Main table
+@SuppressLint("ResourceAsColor")
 @Composable
 fun RegistrationRole(modifier: Modifier = Modifier
 ){
@@ -73,8 +76,9 @@ fun RegistrationRole(modifier: Modifier = Modifier
                 Text(text = "Step 1/4",
                     modifier = Modifier.fillMaxWidth()
                         .padding(end = 10.dp),
-                    color = R.color.textColor,
+                    style = TextStyle(),
                     fontSize = 14.sp,
+                    color = Color(R.color.textColor),
                     textAlign = TextAlign.Right
                 )
 
