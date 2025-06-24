@@ -69,4 +69,5 @@ dependencies {
     testImplementation(libs.androidx.ui.test.manifest)
     // https://mvnrepository.com/artifact/com.google.accompanist/accompanist-drawablepainter
   //  runtimeOnly("com.google.accompanist:accompanist-drawablepainter:0.24.12-rc")
+    implementation("androidx.compose.material3:material3:1.4.0-alpha15")
 }

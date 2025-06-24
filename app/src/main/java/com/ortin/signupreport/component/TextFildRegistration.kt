@@ -18,19 +18,21 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.text.input.KeyboardType
+import androidx.compose.ui.text.input.TextFieldValue
 
 
 @Composable
 fun TextFildRegistration(){
 
-    var text: String by remember { mutableStateOf("") }
+    var text by remember { mutableStateOf(TextFieldValue("")) }
     // Ввод  информации
     OutlinedTextField(
-        value = text,
+
+        state = rememberTextFieldState(),
         lineLimits = TextFieldLineLimits.SingleLine,
         placeholder = {  },
-        label = {  Text(text = "Enter Your Name") },
-        onValueChange = { newText:String -> text = newText },
+        label = { Text("User name") },
+        onValueChange = { },
         enable = true,  // разрешен ввод
         singleLine = true,
         keyboardOptions = KeyboardOptions(
