@@ -21,8 +21,8 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.ortin.signupreport.ui.theme.ButtonShadow
-import com.ortin.signupreport.ui.theme.ConfirmButtonColor
-import com.ortin.signupreport.ui.theme.ConfirmButtonTextColor
+import com.ortin.signupreport.ui.theme.ButtonColor
+import com.ortin.signupreport.ui.theme.ButtonTextColor
 
 @Composable
 fun ConfirmButton(
@@ -42,14 +42,14 @@ fun ConfirmButton(
             ambientColor = ButtonShadow,
             spotColor = ButtonShadow
         ),
-        colors = ButtonDefaults.buttonColors(containerColor = ConfirmButtonColor),
+        colors = ButtonDefaults.buttonColors(containerColor = ButtonColor),
         shape = RoundedCornerShape(20.dp),
         onClick = { /*TODO*/ },
     ) {
         Text(
             text = buttonText,
             style = TextStyle(
-                color = ConfirmButtonTextColor,
+                color = ButtonTextColor,
                 fontFamily = FontFamily.Default,
                 fontWeight = FontWeight.W700,
                 fontSize = 18.sp,
