@@ -90,6 +90,6 @@ fun ImputRigistrationData() {
 
 @Preview
 @Composable
-fun ImputRigistrationDataPreview() {
+fun ImputRigistrationDataPreview(modifier: Modifier = Modifier) {
     ImputRigistrationData()
 }
