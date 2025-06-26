@@ -15,12 +15,12 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.shadow
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.ortin.signupreport.ui.theme.BackgroundColor
 
 @Composable
 fun ImputRigistrationData(modifier: Modifier = Modifier){
@@ -29,12 +29,12 @@ fun ImputRigistrationData(modifier: Modifier = Modifier){
         modifier = Modifier
             .fillMaxSize()
             .padding()
-            .background(Color(0xFFD9EAFA))
+            .background(BackgroundColor)
     ) {
 
         Card(modifier = Modifier
             .fillMaxWidth()
-            .background(Color(0xFFD9EAFA))
+            .background(BackgroundColor)
             .padding(start = 17.dp, end = 17.dp, top = 50.dp)
             .height(1000.dp)
             .shadow(5.dp, RoundedCornerShape(20.dp))
@@ -43,15 +43,13 @@ fun ImputRigistrationData(modifier: Modifier = Modifier){
             Box(
                 modifier = Modifier
                     .fillMaxSize()
-                    .background(Color(0xFFD9EAFA))
+                    .background(BackgroundColor)
             ) {
                 Column(
                     modifier = Modifier
                         .fillMaxWidth()
                         .padding(10.dp)
-                        .background(
-                            Color(0xFFD9EAFA)
-                        ),
+                        .background(BackgroundColor),
                     horizontalAlignment = Alignment.CenterHorizontally,
                 ) {
                     Text( // text
@@ -94,6 +92,6 @@ fun ImputRigistrationData(modifier: Modifier = Modifier){
 
 @Preview
 @Composable
-fun ImputRigistrationDataPteview() {
+fun ImputRigistrationDataPreview(modifier: Modifier = Modifier) {
     ImputRigistrationData()
 }
