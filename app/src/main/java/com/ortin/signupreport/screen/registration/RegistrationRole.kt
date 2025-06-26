@@ -144,7 +144,6 @@ fun RegistrationCard(
                         .size(170.dp, 80.dp)
                 )
                 Text(text = name, fontSize = 14.sp)
-
             }
         }
     }
