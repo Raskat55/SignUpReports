@@ -36,8 +36,6 @@ import com.ortin.signupreport.ui.theme.BackgroundColor
 @Composable
 fun RegistrationRole(
     modifier: Modifier = Modifier
-        .fillMaxSize()
-        .background(BackgroundColor)
 ) {
     Box(
         Modifier
@@ -48,7 +46,7 @@ fun RegistrationRole(
         Card(
             modifier = Modifier
                 .fillMaxWidth()
-                .background(Color(0xFFD9EAFA))
+                .background(BackgroundColor)
                 .size(width = 350.dp, height = 830.dp)
                 .padding(start = 17.dp, end = 17.dp, top = 200.dp)
                 .shadow(5.dp, RoundedCornerShape(20.dp))
@@ -57,7 +55,7 @@ fun RegistrationRole(
             Box(
                 modifier = Modifier
                     .fillMaxSize()
-                    .background(Color(0xFFD9EAFA))
+                    .background(BackgroundColor)
             ) {
                 Column(
                     modifier = Modifier // основная ось //
@@ -125,7 +123,7 @@ fun RegistrationRole(
 }
 
 
-//Registration Card
+
 @Composable
 fun RegistrationCard(
     name: String,
