@@ -61,7 +61,8 @@ fun ImputRigistrationData() {
                         textAlign = TextAlign.Right
                     )
                     Box(
-                        modifier = Modifier
+                        modifier = Modifier,
+                        contentAlignment = Alignment.Center
                     ) {
                         Column(
                             modifier = Modifier
