@@ -23,7 +23,7 @@ import androidx.compose.ui.unit.sp
 import com.ortin.signupreport.ui.theme.BackgroundColor
 
 @Composable
-fun ImputRigistrationData(modifier: Modifier = Modifier){
+fun ImputRigistrationData() {
 
     Box(
         modifier = Modifier
@@ -32,12 +32,13 @@ fun ImputRigistrationData(modifier: Modifier = Modifier){
             .background(BackgroundColor)
     ) {
 
-        Card(modifier = Modifier
-            .fillMaxWidth()
-            .background(BackgroundColor)
-            .padding(start = 17.dp, end = 17.dp, top = 50.dp)
-            .height(1000.dp)
-            .shadow(5.dp, RoundedCornerShape(20.dp))
+        Card(
+            modifier = Modifier
+                .fillMaxWidth()
+                .background(BackgroundColor)
+                .padding(start = 17.dp, end = 17.dp, top = 50.dp)
+                .height(1000.dp)
+                .shadow(5.dp, RoundedCornerShape(20.dp))
         ) {
 
             Box(
@@ -54,24 +55,30 @@ fun ImputRigistrationData(modifier: Modifier = Modifier){
                 ) {
                     Text( // text
                         text = "Step 2/4",
-                        modifier = Modifier.fillMaxWidth()
+                        modifier = Modifier
+                            .fillMaxWidth()
                             .padding(top = 10.dp, end = 15.dp),
                         fontSize = 14.sp,
                         textAlign = TextAlign.Right
                     )
-                    Box(modifier = Modifier){
-                        Column(modifier = Modifier
-                            .fillMaxWidth()
-                            .padding(2.dp),
+                    Box(
+                        modifier = Modifier
+                    ) {
+                        Column(
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .padding(2.dp),
                             verticalArrangement = Arrangement.Bottom,
                             horizontalAlignment = Alignment.CenterHorizontally
                         ) {
-                            Text(text = "Enter your details to",
+                            Text(
+                                text = "Enter your details to",
                                 fontSize = 27.sp,
                                 fontWeight = FontWeight.Bold
                             )
 
-                            Text(text = "complete the registration",
+                            Text(
+                                text = "complete the registration",
                                 fontSize = 27.sp,
                                 fontWeight = FontWeight.Bold
                             )
@@ -85,13 +92,8 @@ fun ImputRigistrationData(modifier: Modifier = Modifier){
 }
 
 
-
-
-
-
-
 @Preview
 @Composable
-fun ImputRigistrationDataPreview(modifier: Modifier = Modifier) {
+fun ImputRigistrationDataPreview() {
     ImputRigistrationData()
 }
