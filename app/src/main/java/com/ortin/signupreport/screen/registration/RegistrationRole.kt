@@ -44,7 +44,7 @@ fun RegistrationRole(
         contentAlignment = Alignment.TopCenter
     ) {
         Card(
-            modifier = modifier
+            modifier = Modifier
                 .fillMaxWidth()
                 .background(Color(0xFFD9EAFA))
                 .padding(start = 17.dp, end = 17.dp, top = 200.dp)
@@ -53,12 +53,12 @@ fun RegistrationRole(
         ) {
 
             Box(
-                modifier = modifier
+                modifier = Modifier
                     .fillMaxSize()
                     .background(Color(0xFFD9EAFA))
             ) {
                 Column(
-                    modifier = modifier // основная ось //
+                    modifier = Modifier // основная ось //
                         .fillMaxWidth()
                         .background(
                             Color(0xFFD9EAFA)
@@ -67,7 +67,7 @@ fun RegistrationRole(
                 ) {
                     Text(
                         text = "Step 1/4",
-                        modifier = modifier
+                        modifier = Modifier
                             .fillMaxWidth()
                             .padding(top = 10.dp, end = 15.dp),
                         fontSize = 14.sp,
@@ -76,14 +76,14 @@ fun RegistrationRole(
                         textAlign = TextAlign.Right
                     )
                     Box(
-                        modifier = modifier             // для 2 строк
+                        modifier = Modifier             // для 2 строк
                             .fillMaxWidth()
                             .padding()
                             .background(Color(0xFFD9EAFA)),
                         contentAlignment = Alignment.Center
                     ) {
                         Column(
-                            modifier = modifier
+                            modifier = Modifier
                                 .fillMaxWidth()
                                 .padding(2.dp),
                             verticalArrangement = Arrangement.Bottom,
@@ -98,13 +98,13 @@ fun RegistrationRole(
                     }
 
                     Box(
-                        modifier = modifier
+                        modifier = Modifier
                             .padding()
                             .fillMaxWidth()
                             .background(Color(0xFFD9EAFA))
                     ) {
                         Column(
-                            modifier = modifier // основная ось
+                            modifier = Modifier // основная ось
                                 .fillMaxWidth()
                                 .padding(horizontal = 10.dp, vertical = 16.dp)
                                 .background(Color(0xFFD9EAFA)),
@@ -120,7 +120,7 @@ fun RegistrationRole(
             }
 
         }
-        LogoWithBackground(modifier = modifier.padding(top = 120.dp))
+        LogoWithBackground(modifier = Modifier.padding(top = 120.dp))
     }
 }
 
@@ -133,7 +133,7 @@ fun RegistrationCard(
     modifier: Modifier = Modifier.background(BackgroundColor)
 ) {
     Card(
-        modifier = modifier
+        modifier = Modifier
             .fillMaxWidth()
             .background(Color(0xFFD9EAFA))
             .padding(5.dp)
@@ -144,7 +144,7 @@ fun RegistrationCard(
         shape = RoundedCornerShape(18.dp),
     ) {
         Box(
-            modifier = modifier
+            modifier = Modifier
                 .padding()
                 .fillMaxWidth()
                 .background(Color(0xFFD9EAFA))
