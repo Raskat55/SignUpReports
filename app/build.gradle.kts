@@ -52,20 +52,43 @@ android {
 
 dependencies {
 
+    // Базовые зависимости
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
+    implementation(libs.androidx.lifecycle.viewmodel.compose)
     implementation(libs.androidx.activity.compose)
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.ui)
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+
+    // Тестовые зависимости
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(platform(libs.androidx.compose.bom))
     androidTestImplementation(libs.androidx.ui.test.junit4)
+
+    // Дебаг зависимости
     debugImplementation(libs.androidx.ui.tooling)
-    testImplementation(libs.androidx.ui.test.manifest)
-    implementation("androidx.compose.material3:material3:1.4.0-alpha15")
+    debugImplementation(libs.androidx.ui.test.manifest)
+
+    // DataStore
+    implementation(libs.androidx.datastore.preferences)
+
+    // Графики (визуализация)
+    implementation(libs.ycharts)
+
+    // DI
+    implementation(libs.koin.android)
+    implementation(libs.koin.androidx.compose)
+    implementation(libs.koin.androidx.navigation)
+    implementation(libs.koin.androidx.compose.navigation)
+
+    // Навигация
+    implementation(libs.androidx.navigation.compose)
+
+    // Корутины
+    implementation(libs.kotlinx.coroutines.android)
 }
