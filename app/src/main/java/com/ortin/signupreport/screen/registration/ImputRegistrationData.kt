@@ -71,14 +71,8 @@ fun ImputRigistrationData() {
                             horizontalAlignment = Alignment.CenterHorizontally
                         ) {
                             Text(
-                                text = "Enter your details to",
-                                fontSize = 27.sp,
-                                fontWeight = FontWeight.Bold
-                            )
-
-                            Text(
-                                text = "complete the registration",
-                                fontSize = 27.sp,
+                                text = "Enter your details to\n\tcomplete the registration",
+                                fontSize = 30.sp,
                                 fontWeight = FontWeight.Bold
                             )
                         }
