@@ -53,20 +53,13 @@ fun ImputRigistrationData() {
                     textAlign = TextAlign.Right
                 )
                 Text(
-                    text = "Enter your details to",
+                    text = "Enter your details to\n\tcomplete the registration",
                     modifier = Modifier
                         .fillMaxWidth()
-                        .padding(start = 10.dp),
+                        .padding(5.dp),
                     fontSize = 27.sp,
-                    fontWeight = FontWeight.Bold
-                )
-                Text(
-                    text = "complete the registration",
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .padding(start = 10.dp),
-                    fontSize = 27.sp,
-                    fontWeight = FontWeight.Bold
+                    fontWeight = FontWeight.Bold,
+                    textAlign = TextAlign.Center
                 )
             }
         }
