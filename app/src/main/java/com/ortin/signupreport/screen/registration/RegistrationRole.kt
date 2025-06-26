@@ -13,6 +13,7 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.magnifier
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Card
 import androidx.compose.material3.Text
@@ -30,6 +31,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.ortin.signupreport.R
 import com.ortin.signupreport.component.LogoSreen
+import com.ortin.signupreport.presentation.component.LogoWithBackground
 import com.ortin.signupreport.ui.theme.BackgroundColor
 
 
@@ -122,19 +124,7 @@ fun RegistrationRole(
             }
 
         }
-        Box(
-            modifier = Modifier // первый box для лого
-                .padding(top = 120.dp)
-                .clip(RoundedCornerShape(17.dp))
-                .height(100.dp)
-                .width(100.dp)
-                .background(
-                    Color(0xFFD9EAFA)
-                ),
-            contentAlignment = Alignment.BottomCenter
-        ) {
-            LogoSreen()  // лого
-        }
+        LogoWithBackground()
     }
 }
 
