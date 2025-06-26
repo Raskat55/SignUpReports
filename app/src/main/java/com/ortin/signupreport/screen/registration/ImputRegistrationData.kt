@@ -28,7 +28,6 @@ fun ImputRigistrationData() {
     Box(
         modifier = Modifier
             .fillMaxSize()
-            .padding()
             .background(BackgroundColor)
     ) {
 
