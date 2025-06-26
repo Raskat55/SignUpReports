@@ -1,7 +1,6 @@
 package com.ortin.signupreport.screen.registration
 
 import androidx.compose.foundation.background
-import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
@@ -39,49 +38,27 @@ fun ImputRigistrationData() {
                 .height(1000.dp)
                 .shadow(5.dp, RoundedCornerShape(20.dp))
         ) {
-
-            Box(
+            Column(
                 modifier = Modifier
                     .fillMaxSize()
-                    .background(BackgroundColor)
+                    .background(BackgroundColor),
+                horizontalAlignment = Alignment.CenterHorizontally,
             ) {
-                Column(
+                Text( // text
+                    text = "Step 2/4",
                     modifier = Modifier
                         .fillMaxWidth()
-                        .padding(10.dp)
-                        .background(BackgroundColor),
-                    horizontalAlignment = Alignment.CenterHorizontally,
-                ) {
-                    Text( // text
-                        text = "Step 2/4",
-                        modifier = Modifier
-                            .fillMaxWidth()
-                            .padding(top = 10.dp, end = 15.dp),
-                        fontSize = 14.sp,
-                        textAlign = TextAlign.Right
-                    )
-                    Box(
-                        modifier = Modifier,
-                        contentAlignment = Alignment.Center
-                    ) {
-                        Column(
-                            modifier = Modifier
-                                .fillMaxWidth()
-                                .padding(2.dp),
-                            verticalArrangement = Arrangement.Bottom,
-                            horizontalAlignment = Alignment.CenterHorizontally
-                        ) {
-                            Text(
-                                text = "Enter your details to\n\tcomplete the registration",
-                                modifier = Modifier
-                                    .fillMaxWidth(),
-                                fontSize = 27.sp,
-                                fontWeight = FontWeight.Bold
-                            )
-                        }
-                    }
-                }
-
+                        .padding(top = 15.dp, end = 15.dp),
+                    fontSize = 14.sp,
+                    textAlign = TextAlign.Right
+                )
+                Text(
+                    text = "Enter your details to\n\tcomplete the registration",
+                    modifier = Modifier
+                        .fillMaxWidth(),
+                    fontSize = 27.sp,
+                    fontWeight = FontWeight.Bold
+                )
             }
         }
     }
