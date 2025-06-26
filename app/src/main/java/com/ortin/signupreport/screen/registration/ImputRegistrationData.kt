@@ -72,7 +72,9 @@ fun ImputRigistrationData() {
                         ) {
                             Text(
                                 text = "Enter your details to\n\tcomplete the registration",
-                                fontSize = 30.sp,
+                                modifier = Modifier
+                                    .fillMaxWidth(),
+                                fontSize = 27.sp,
                                 fontWeight = FontWeight.Bold
                             )
                         }
