@@ -52,7 +52,7 @@ fun RegistrationRole() {
                     .background(BackgroundColor)
             ) {
                 Column(
-                    modifier = Modifier // основная ось //
+                    modifier = Modifier
                         .fillMaxWidth()
                         .background(BackgroundColor),
                     horizontalAlignment = Alignment.CenterHorizontally,
@@ -66,7 +66,7 @@ fun RegistrationRole() {
                         textAlign = TextAlign.Right
                     )
                     Box(
-                        modifier = Modifier             // для 2 строк
+                        modifier = Modifier
                             .fillMaxWidth()
                             .background(BackgroundColor),
                         contentAlignment = Alignment.Center
@@ -92,7 +92,7 @@ fun RegistrationRole() {
                             .background(BackgroundColor)
                     ) {
                         Column(
-                            modifier = Modifier // основная ось
+                            modifier = Modifier
                                 .fillMaxWidth()
                                 .padding(horizontal = 10.dp, vertical = 16.dp)
                                 .background(BackgroundColor),
@@ -124,8 +124,8 @@ fun RegistrationCard(
             .fillMaxWidth()
             .background(BackgroundColor)
             .padding(5.dp)
-            .shadow(5.dp, RoundedCornerShape(18.dp)) // округление тени
-            .clickable() {  // для нажатия
+            .shadow(5.dp, RoundedCornerShape(18.dp))
+            .clickable() {
                 TODO()
             },
         shape = RoundedCornerShape(18.dp),
@@ -134,7 +134,7 @@ fun RegistrationCard(
             modifier = modifier
         ) {
             Column(
-                modifier = Modifier // основная ось
+                modifier = Modifier
                     .fillMaxWidth()
                     .padding(15.dp)
                     .background(BackgroundColor),
