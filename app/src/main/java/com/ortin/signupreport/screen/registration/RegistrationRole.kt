@@ -34,9 +34,7 @@ import com.ortin.signupreport.ui.theme.BackgroundColor
 // Main table
 @SuppressLint("ResourceAsColor")
 @Composable
-fun RegistrationRole(
-    modifier: Modifier = Modifier.background(BackgroundColor)
-) {
+fun RegistrationRole() {
     Box(
         modifier = Modifier
             .fillMaxSize()
@@ -130,7 +128,7 @@ fun RegistrationRole(
 fun RegistrationCard(
     name: String,
     imageId: Int,
-    modifier: Modifier = Modifier.background(Color(0xFFD9EAFA))
+    modifier: Modifier = Modifier.background(BackgroundColor)
 ) {
     Card(
         modifier = Modifier
