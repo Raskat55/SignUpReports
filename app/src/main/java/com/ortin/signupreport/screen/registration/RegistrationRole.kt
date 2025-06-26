@@ -1,6 +1,5 @@
 package com.ortin.signupreport.screen.registration
 
-import android.annotation.SuppressLint
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -19,7 +18,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.shadow
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
@@ -32,9 +30,7 @@ import com.ortin.signupreport.ui.theme.BackgroundColor
 
 
 @Composable
-fun RegistrationRole(
-    modifier: Modifier = Modifier
-) {
+fun RegistrationRole() {
     Box(
         Modifier
             .fillMaxHeight()
@@ -58,9 +54,7 @@ fun RegistrationRole(
                 Column(
                     modifier = Modifier // основная ось //
                         .fillMaxWidth()
-                        .background(
-                            Color(0xFFD9EAFA)
-                        ),
+                        .background(BackgroundColor),
                     horizontalAlignment = Alignment.CenterHorizontally,
                 ) {
                     Text(
@@ -74,7 +68,6 @@ fun RegistrationRole(
                     Box(
                         modifier = Modifier             // для 2 строк
                             .fillMaxWidth()
-                            .padding()
                             .background(BackgroundColor),
                         contentAlignment = Alignment.Center
                     ) {
@@ -95,7 +88,6 @@ fun RegistrationRole(
 
                     Box(
                         modifier = Modifier
-                            .padding()
                             .fillMaxWidth()
                             .background(BackgroundColor)
                     ) {
@@ -119,7 +111,6 @@ fun RegistrationRole(
         LogoWithBackground(modifier = Modifier.padding(top = 120.dp))
     }
 }
-
 
 
 @Composable
