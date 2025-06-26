@@ -98,7 +98,6 @@ fun RegistrationRole() {
                                 .background(BackgroundColor),
                             horizontalAlignment = Alignment.CenterHorizontally
                         ) {
-                            /* Карточки с быбором роли */
                             RegistrationCard("School or University", R.drawable.univer_1)
                             RegistrationCard("Founder", R.drawable.idea_1)
                             RegistrationCard("Co-builder", R.drawable.hat_1)
@@ -106,12 +105,10 @@ fun RegistrationRole() {
                     }
                 }
             }
-
         }
         LogoWithBackground(modifier = Modifier.padding(top = 120.dp))
     }
 }
-
 
 @Composable
 fun RegistrationCard(
