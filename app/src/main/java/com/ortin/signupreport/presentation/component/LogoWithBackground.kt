@@ -1,4 +1,4 @@
-ackage com.ortin.signupreport.presentation.component
+package com.ortin.signupreport.presentation.component
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
