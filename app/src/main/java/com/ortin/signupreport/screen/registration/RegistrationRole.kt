@@ -7,9 +7,9 @@ import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -35,11 +35,13 @@ import com.ortin.signupreport.ui.theme.BackgroundColor
 @SuppressLint("ResourceAsColor")
 @Composable
 fun RegistrationRole(
-    modifier: Modifier = Modifier.background(BackgroundColor)
+    modifier: Modifier = Modifier
+        .fillMaxSize()
+        .background(BackgroundColor)
 ) {
     Box(
-        modifier
-            .fillMaxSize()
+        Modifier
+            .fillMaxHeight()
             .background(BackgroundColor),
         contentAlignment = Alignment.TopCenter
     ) {
@@ -47,8 +49,8 @@ fun RegistrationRole(
             modifier = Modifier
                 .fillMaxWidth()
                 .background(Color(0xFFD9EAFA))
+                .size(width = 350.dp, height = 830.dp)
                 .padding(start = 17.dp, end = 17.dp, top = 200.dp)
-                .height(600.dp)
                 .shadow(5.dp, RoundedCornerShape(20.dp))
         ) {
 
@@ -71,15 +73,13 @@ fun RegistrationRole(
                             .fillMaxWidth()
                             .padding(top = 10.dp, end = 15.dp),
                         fontSize = 14.sp,
-
-//                    color = Color(0x4C93D5),
                         textAlign = TextAlign.Right
                     )
                     Box(
                         modifier = Modifier             // для 2 строк
                             .fillMaxWidth()
                             .padding()
-                            .background(Color(0xFFD9EAFA)),
+                            .background(BackgroundColor),
                         contentAlignment = Alignment.Center
                     ) {
                         Column(
@@ -101,13 +101,13 @@ fun RegistrationRole(
                         modifier = Modifier
                             .padding()
                             .fillMaxWidth()
-                            .background(Color(0xFFD9EAFA))
+                            .background(BackgroundColor)
                     ) {
                         Column(
                             modifier = Modifier // основная ось
                                 .fillMaxWidth()
                                 .padding(horizontal = 10.dp, vertical = 16.dp)
-                                .background(Color(0xFFD9EAFA)),
+                                .background(BackgroundColor),
                             horizontalAlignment = Alignment.CenterHorizontally
                         ) {
                             /* Карточки с быбором роли */
@@ -133,9 +133,9 @@ fun RegistrationCard(
     modifier: Modifier = Modifier.background(BackgroundColor)
 ) {
     Card(
-        modifier = Modifier
+        modifier = modifier
             .fillMaxWidth()
-            .background(Color(0xFFD9EAFA))
+            .background(BackgroundColor)
             .padding(5.dp)
             .shadow(5.dp, RoundedCornerShape(18.dp)) // округление тени
             .clickable() {  // для нажатия
@@ -144,16 +144,13 @@ fun RegistrationCard(
         shape = RoundedCornerShape(18.dp),
     ) {
         Box(
-            modifier = Modifier
-                .padding()
-                .fillMaxWidth()
-                .background(Color(0xFFD9EAFA))
+            modifier = modifier
         ) {
             Column(
                 modifier = Modifier // основная ось
                     .fillMaxWidth()
                     .padding(15.dp)
-                    .background(Color(0xFFD9EAFA)),
+                    .background(BackgroundColor),
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
                 Image(
@@ -161,8 +158,6 @@ fun RegistrationCard(
                     contentDescription = null,
                     modifier
                         .size(170.dp, 80.dp)
-                        .background(Color(0xFFD9EAFA))
-
                 )
                 Text(text = name, fontSize = 14.sp)
 
