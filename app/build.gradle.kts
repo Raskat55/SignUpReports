@@ -91,4 +91,5 @@ dependencies {
 
     // Корутины
     implementation(libs.kotlinx.coroutines.android)
+
 }
