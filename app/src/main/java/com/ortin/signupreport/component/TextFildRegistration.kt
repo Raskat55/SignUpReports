@@ -1,7 +1,6 @@
 package com.ortin.signupreport.component
 
 import android.R.attr.label
-import androidx.compose.foundation.text.input.TextFieldLineLimits
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -15,8 +14,8 @@ import androidx.compose.ui.tooling.preview.Preview
 fun TextFildRegistration() {
 
     val textValue = remember { mutableStateOf(" ") }
-    val onTextChange = {
-        text: String -> textValue.value = text
+    val onTextChange = { text: String ->
+        textValue.value = text
     }
 
     OutlinedTextField(
@@ -24,7 +23,7 @@ fun TextFildRegistration() {
         onValueChange = onTextChange,
         placeholder = Text(""),
         label = Text("Phone")
-    ){
+    ) {
 
     }
 
