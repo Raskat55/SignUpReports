@@ -17,7 +17,8 @@ fun TextFildRegistration() {
     val textValue = remember { mutableStateOf(" ") }
 
     OutlinedTextField(
-        value = textValue,
+        value = textValue.value,
+        onValueChange = { TODO()},
         placeholder = Text(""),
         label = Text("Phone")
     ){
