@@ -23,12 +23,8 @@ fun TextFildRegistration() {
         onValueChange = onTextChange,
         placeholder = Text(""),
         label = Text("Phone")
-    ) {
-
-    }
-
+    )
 }
-
 
 @Preview
 @Composable
