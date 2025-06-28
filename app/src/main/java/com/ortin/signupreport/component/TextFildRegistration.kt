@@ -15,10 +15,13 @@ import androidx.compose.ui.tooling.preview.Preview
 fun TextFildRegistration() {
 
     val textValue = remember { mutableStateOf(" ") }
+    val onTextChange = {
+        text: String -> textValue.value = text
+    }
 
     OutlinedTextField(
         value = textValue.value,
-        onValueChange = { TODO()},
+        onValueChange = onTextChange,
         placeholder = Text(""),
         label = Text("Phone")
     ){
