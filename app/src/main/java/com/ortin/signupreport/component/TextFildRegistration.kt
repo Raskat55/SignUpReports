@@ -1,6 +1,5 @@
 package com.ortin.signupreport.component
 
-import android.R.attr.label
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
