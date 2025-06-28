@@ -1,7 +1,6 @@
 package com.ortin.signupreport.component
 
 import androidx.compose.material3.OutlinedTextField
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -19,9 +18,7 @@ fun TextFildRegistration() {
 
     OutlinedTextField(
         value = textValue.value,
-        onValueChange = onTextChange,
-        placeholder = Text(""),
-        label = Text("Phone")
+        onValueChange = { onTextChange },
     )
 }
 
