@@ -69,15 +69,21 @@ fun ImputRigistrationData() {
             TextFildRegistration("Phone number")
             TextFildRegistration("Password")
 
-            ConfirmButton(
-                buttonText = "Confirm",
-                buttonWidth = 320.dp,
-                buttonHeight = 56.dp,
+            Box(
                 modifier = Modifier
-                    .padding(10.dp)
                     .background(BackgroundColor)
                     .fillMaxWidth()
-            )
+                    .padding(10.dp),
+                contentAlignment = Alignment.Center
+            ) {
+                ConfirmButton(
+                    buttonText = "Confirm",
+                    buttonWidth = 320.dp,
+                    buttonHeight = 56.dp,
+                    modifier = Modifier
+                        .fillMaxWidth()
+                )
+            }
         }
     }
 }
