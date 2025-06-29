@@ -88,7 +88,6 @@ fun ImputRigistrationData() {
     }
 }
 
-
 @Preview
 @Composable
 fun ImputRigistrationDataPreview(modifier: Modifier = Modifier) {
