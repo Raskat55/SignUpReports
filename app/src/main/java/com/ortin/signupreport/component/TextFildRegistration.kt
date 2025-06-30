@@ -20,6 +20,7 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -79,15 +80,17 @@ fun TextFildRegistration(
         Text(
             text = nameLabel,
             modifier = Modifier
-                .padding(start = 40.dp,
-                    top = 5.dp)
+                .padding(
+                    start = 40.dp,
+                    top = 5.dp
+                )
                 .background(BackgroundColor),
             color = Color.Black,
-            fontSize = 12.sp
+            fontSize = 12.sp,
+            fontWeight = FontWeight.Bold
         )
     }
 }
-
 
 @Preview
 @Composable
