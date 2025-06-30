@@ -3,6 +3,7 @@ package com.ortin.signupreport.component
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.OutlinedTextFieldDefaults
 import androidx.compose.material3.Text
@@ -33,6 +34,8 @@ fun TextFildRegistration(nameLabel: String) {
             .fillMaxWidth(),
         onValueChange =  onTextChange,
         label = { Text(text = nameLabel) },
+        maxLines = 1,
+        shape = RoundedCornerShape(20.dp),
         colors = OutlinedTextFieldDefaults.colors(
             focusedContainerColor = Color.White,
             unfocusedContainerColor = Color.White,
