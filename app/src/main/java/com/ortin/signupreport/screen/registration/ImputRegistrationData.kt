@@ -14,7 +14,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.shadow
-import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.style.TextAlign
@@ -24,13 +23,9 @@ import androidx.compose.ui.unit.sp
 import com.ortin.signupreport.component.TextFildRegistration
 import com.ortin.signupreport.presentation.component.ConfirmButton
 import com.ortin.signupreport.ui.theme.BackgroundColor
-import com.ortin.signupreport.ui.theme.GradientBlue
-import com.ortin.signupreport.ui.theme.GradientGreen
-import com.ortin.signupreport.ui.theme.GradientRed
 
 @Composable
 fun ImputRigistrationData() {
-    val brush = Brush.horizontalGradient(listOf(GradientBlue, GradientRed, GradientGreen))
 
     Box(
         modifier = Modifier
@@ -71,35 +66,29 @@ fun ImputRigistrationData() {
             }
             TextFildRegistration(
                 "First Name",
-                keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Text),
-                onValueChange = { TODO() }
+                keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Text)
             )
             TextFildRegistration(
                 "Last Name",
-                keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Text),
-                onValueChange = { TODO() }
+                keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Text)
             )
             TextFildRegistration(
                 "E-mail",
-                keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Email),
-                onValueChange = { TODO() }
+                keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Email)
             )
             TextFildRegistration(
                 "School Name",
-                keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Text),
-                onValueChange = { TODO() }
+                keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Text)
             )
             TextFildRegistration(
                 "Phone Number",
-                keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Phone),
-                onValueChange = { TODO() }
+                keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Phone)
             )
 
-                TextFildRegistration(
-                    "Password",
-                    keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Password),
-                    onValueChange = { TODO() }
-                )
+            TextFildRegistration(
+                "Password",
+                keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Password)
+            )
 
             Box(
                 modifier = Modifier
