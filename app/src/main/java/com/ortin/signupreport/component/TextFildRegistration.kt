@@ -33,6 +33,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.ortin.signupreport.R
 import com.ortin.signupreport.ui.theme.BackgroundColor
+import com.ortin.signupreport.ui.theme.ButtonColor
 import com.ortin.signupreport.ui.theme.ButtonTextColor
 import com.ortin.signupreport.ui.theme.GradientBlue
 import com.ortin.signupreport.ui.theme.GradientGreen
@@ -42,7 +43,8 @@ import com.ortin.signupreport.ui.theme.GradientRed
 @Composable
 fun TextFildRegistration(
     nameLabel: String,
-    keyboardOptions: KeyboardOptions
+    keyboardOptions: KeyboardOptions,
+    eyeCheck: Boolean = false
 ) {
     val brush = Brush.horizontalGradient(listOf(GradientBlue, GradientRed, GradientGreen))
     val textValue = rememberSaveable { mutableStateOf(" ") }
@@ -88,7 +90,9 @@ fun TextFildRegistration(
                 ) {
                     innerTextField()
                     Spacer(modifier = Modifier.padding(3.dp))
-                    RegistrationToggleButton()
+                    if (eyeCheck) {
+                        RegistrationToggleButton()
+                    }
                 }
 
             }
@@ -125,15 +129,19 @@ fun RegistrationToggleButton() {
             if (checked) {
                 Icon(
                     painter = painterResource(R.drawable.eye), contentDescription = "",
+                    tint = ButtonColor,
                     modifier = Modifier
                         .fillMaxSize()
+                        .size(24.dp)
                 )
             } else {
                 Icon(
                     painter = painterResource(R.drawable.eye_slash),
                     contentDescription = "",
+                    tint = ButtonColor,
                     modifier = Modifier
                         .fillMaxSize()
+                        .size(24.dp)
                 )
             }
         }

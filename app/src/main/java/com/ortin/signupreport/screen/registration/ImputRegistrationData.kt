@@ -86,7 +86,8 @@ fun ImputRigistrationData() {
 
                 TextFildRegistration(
                     "Password",
-                    keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Password)
+                    keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Password,),
+                    eyeCheck = true
                 )
             }
 
