@@ -14,6 +14,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.shadow
+import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.style.TextAlign
@@ -23,9 +24,13 @@ import androidx.compose.ui.unit.sp
 import com.ortin.signupreport.component.TextFildRegistration
 import com.ortin.signupreport.presentation.component.ConfirmButton
 import com.ortin.signupreport.ui.theme.BackgroundColor
+import com.ortin.signupreport.ui.theme.GradientBlue
+import com.ortin.signupreport.ui.theme.GradientGreen
+import com.ortin.signupreport.ui.theme.GradientRed
 
 @Composable
 fun ImputRigistrationData() {
+    val brush = Brush.horizontalGradient(listOf(GradientBlue, GradientRed, GradientGreen))
 
     Box(
         modifier = Modifier
@@ -89,11 +94,14 @@ fun ImputRigistrationData() {
                 keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Phone),
                 onValueChange = { TODO() }
             )
-            TextFildRegistration(
-                "Password",
-                keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Password),
-                onValueChange = { TODO() }
-            )
+            Box(modifier = Modifier
+            ) {
+                TextFildRegistration(
+                    "Password",
+                    keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Password),
+                    onValueChange = { TODO() }
+                )
+            }
 
             Box(
                 modifier = Modifier
