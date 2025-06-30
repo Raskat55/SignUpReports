@@ -62,11 +62,11 @@ fun ImputRigistrationData() {
                     textAlign = TextAlign.Center
                 )
             }
-            TextFildRegistration("First name")
-            TextFildRegistration("Last name")
+            TextFildRegistration("First Name")
+            TextFildRegistration("Last Name")
             TextFildRegistration("E-mail")
-            TextFildRegistration("School name")
-            TextFildRegistration("Phone number")
+            TextFildRegistration("School Name")
+            TextFildRegistration("Phone Number")
             TextFildRegistration("Password")
 
             Box(
