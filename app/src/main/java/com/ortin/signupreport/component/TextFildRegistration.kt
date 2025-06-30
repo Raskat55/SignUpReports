@@ -1,6 +1,5 @@
 package com.ortin.signupreport.component
 
-import android.graphics.drawable.Icon
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Box
@@ -14,7 +13,6 @@ import androidx.compose.foundation.text.BasicTextField
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconToggleButton
-import androidx.compose.material3.SegmentedButtonDefaults.Icon
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -25,6 +23,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.tooling.preview.Preview
@@ -108,12 +107,16 @@ fun TextFildRegistration(
 @Composable
 fun RegistrationToggleButton() {
     var checked by remember { mutableStateOf(true) }
+
     IconToggleButton(
         checked = checked,
         onCheckedChange = { checked = it }
     ) {
-        if(checked) Icon(R.drawable.eye, contentDescription = "")
-        else Icon(R.drawable.eye_slash, contentDescription = "")
+        if (checked) {
+            Icon(painter = painterResource(R.drawable.eye), contentDescription = "")
+        } else {
+            Icon(painter = painterResource(R.drawable.eye_slash), contentDescription = "")
+        }
     }
 }
 

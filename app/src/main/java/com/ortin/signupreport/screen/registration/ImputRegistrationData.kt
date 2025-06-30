@@ -88,7 +88,6 @@ fun ImputRigistrationData() {
                     "Password",
                     keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Password)
                 )
-
             }
 
             Box(
