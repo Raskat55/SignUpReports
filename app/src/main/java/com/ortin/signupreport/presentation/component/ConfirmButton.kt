@@ -36,12 +36,12 @@ fun ConfirmButton(
             .width(buttonWidth)
             .height(buttonHeight)
             .shadow(
-            elevation = 2.dp,
-            shape = RoundedCornerShape(20.dp),
-            clip = false,
-            ambientColor = ButtonShadow,
-            spotColor = ButtonShadow
-        ),
+                elevation = 2.dp,
+                shape = RoundedCornerShape(20.dp),
+                clip = false,
+                ambientColor = ButtonShadow,
+                spotColor = ButtonShadow
+            ),
         colors = ButtonDefaults.buttonColors(containerColor = ButtonColor),
         shape = RoundedCornerShape(20.dp),
         onClick = { /*TODO*/ },
