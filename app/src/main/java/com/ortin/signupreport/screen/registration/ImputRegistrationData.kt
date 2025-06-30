@@ -63,32 +63,33 @@ fun ImputRigistrationData() {
                     fontWeight = FontWeight.Bold,
                     textAlign = TextAlign.Center
                 )
-            }
-            TextFildRegistration(
-                "First Name",
-                keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Text)
-            )
-            TextFildRegistration(
-                "Last Name",
-                keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Text)
-            )
-            TextFildRegistration(
-                "E-mail",
-                keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Email)
-            )
-            TextFildRegistration(
-                "School Name",
-                keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Text)
-            )
-            TextFildRegistration(
-                "Phone Number",
-                keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Phone)
-            )
+                TextFildRegistration(
+                    "First Name",
+                    keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Text)
+                )
+                TextFildRegistration(
+                    "Last Name",
+                    keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Text)
+                )
+                TextFildRegistration(
+                    "E-mail",
+                    keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Email)
+                )
+                TextFildRegistration(
+                    "School Name",
+                    keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Text)
+                )
+                TextFildRegistration(
+                    "Phone Number",
+                    keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Phone)
+                )
 
-            TextFildRegistration(
-                "Password",
-                keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Password)
-            )
+                TextFildRegistration(
+                    "Password",
+                    keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Password)
+                )
+
+            }
 
             Box(
                 modifier = Modifier

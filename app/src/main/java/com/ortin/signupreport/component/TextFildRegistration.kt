@@ -26,6 +26,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.ortin.signupreport.ui.theme.BackgroundColor
+import com.ortin.signupreport.ui.theme.ButtonTextColor
 import com.ortin.signupreport.ui.theme.GradientBlue
 import com.ortin.signupreport.ui.theme.GradientGreen
 import com.ortin.signupreport.ui.theme.GradientRed
@@ -63,7 +64,7 @@ fun TextFildRegistration(
                 Row(
                     Modifier
                         .fillMaxWidth()
-                        .background(Color.White, RoundedCornerShape(20.dp))
+                        .background(ButtonTextColor, RoundedCornerShape(20.dp))
                         .border(
                             brush = brush,
                             width = 2.dp,
