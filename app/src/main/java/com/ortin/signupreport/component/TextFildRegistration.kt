@@ -4,10 +4,12 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.BasicTextField
 import androidx.compose.foundation.text.KeyboardOptions
@@ -85,6 +87,8 @@ fun TextFildRegistration(
                         .padding(16.dp)
                 ) {
                     innerTextField()
+                    Spacer(modifier = Modifier.padding(3.dp))
+                    RegistrationToggleButton()
                 }
 
             }
@@ -107,15 +111,31 @@ fun TextFildRegistration(
 @Composable
 fun RegistrationToggleButton() {
     var checked by remember { mutableStateOf(true) }
-
-    IconToggleButton(
-        checked = checked,
-        onCheckedChange = { checked = it }
+    Box(
+        modifier = Modifier
+            .size(24.dp)
+            .background(BackgroundColor)
     ) {
-        if (checked) {
-            Icon(painter = painterResource(R.drawable.eye), contentDescription = "")
-        } else {
-            Icon(painter = painterResource(R.drawable.eye_slash), contentDescription = "")
+        IconToggleButton(
+            checked = checked,
+            onCheckedChange = { checked = it },
+            modifier = Modifier
+                .fillMaxSize()
+        ) {
+            if (checked) {
+                Icon(
+                    painter = painterResource(R.drawable.eye), contentDescription = "",
+                    modifier = Modifier
+                        .fillMaxSize()
+                )
+            } else {
+                Icon(
+                    painter = painterResource(R.drawable.eye_slash),
+                    contentDescription = "",
+                    modifier = Modifier
+                        .fillMaxSize()
+                )
+            }
         }
     }
 }
