@@ -7,6 +7,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material3.Card
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -14,6 +15,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -62,12 +64,36 @@ fun ImputRigistrationData() {
                     textAlign = TextAlign.Center
                 )
             }
-            TextFildRegistration("First Name")
-            TextFildRegistration("Last Name")
-            TextFildRegistration("E-mail")
-            TextFildRegistration("School Name")
-            TextFildRegistration("Phone Number")
-            TextFildRegistration("Password")
+            TextFildRegistration(
+                "First Name",
+                keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Text),
+                onValueChange = TODO()
+            )
+            TextFildRegistration(
+                "Last Name",
+                keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Text),
+                onValueChange = TODO()
+            )
+            TextFildRegistration(
+                "E-mail",
+                keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Email),
+                onValueChange = TODO()
+            )
+            TextFildRegistration(
+                "School Name",
+                keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Text),
+                onValueChange = TODO()
+            )
+            TextFildRegistration(
+                "Phone Number",
+                keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Phone),
+                onValueChange = TODO()
+            )
+            TextFildRegistration(
+                "Password",
+                keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Password),
+                onValueChange = TODO()
+            )
 
             Box(
                 modifier = Modifier
