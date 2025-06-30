@@ -54,6 +54,6 @@ fun ImputRigistrationDataPreview(modifier: Modifier = Modifier) {
     TextFildRegistration(
         "snake",
         keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Text),
-        onValueChange = TODO()
+        onValueChange = { TODO() }
     )
 }

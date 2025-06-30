@@ -67,32 +67,32 @@ fun ImputRigistrationData() {
             TextFildRegistration(
                 "First Name",
                 keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Text),
-                onValueChange = TODO()
+                onValueChange = { TODO() }
             )
             TextFildRegistration(
                 "Last Name",
                 keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Text),
-                onValueChange = TODO()
+                onValueChange = { TODO() }
             )
             TextFildRegistration(
                 "E-mail",
                 keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Email),
-                onValueChange = TODO()
+                onValueChange = { TODO() }
             )
             TextFildRegistration(
                 "School Name",
                 keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Text),
-                onValueChange = TODO()
+                onValueChange = { TODO() }
             )
             TextFildRegistration(
                 "Phone Number",
                 keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Phone),
-                onValueChange = TODO()
+                onValueChange = { TODO() }
             )
             TextFildRegistration(
                 "Password",
                 keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Password),
-                onValueChange = TODO()
+                onValueChange = { TODO() }
             )
 
             Box(
