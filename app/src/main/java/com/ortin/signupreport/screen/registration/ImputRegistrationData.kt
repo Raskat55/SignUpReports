@@ -1,6 +1,7 @@
 package com.ortin.signupreport.screen.registration
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
@@ -94,7 +95,8 @@ fun ImputRigistrationData() {
                 keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Phone),
                 onValueChange = { TODO() }
             )
-            Box(modifier = Modifier
+            Box(
+                modifier = Modifier
             ) {
                 TextFildRegistration(
                     "Password",
@@ -107,7 +109,14 @@ fun ImputRigistrationData() {
                 modifier = Modifier
                     .background(BackgroundColor)
                     .fillMaxWidth()
-                    .padding(10.dp),
+                    .padding(10.dp)
+                    .border(
+                        2.dp,
+                        brush = brush,
+                        shape = RoundedCornerShape(
+                            20.dp
+                        )
+                    ),
                 contentAlignment = Alignment.Center
             ) {
                 ConfirmButton(

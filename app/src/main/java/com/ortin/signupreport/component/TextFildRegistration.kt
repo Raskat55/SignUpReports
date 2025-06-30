@@ -42,8 +42,9 @@ fun TextFildRegistration(
             focusedContainerColor = Color.White,
             unfocusedContainerColor = Color.White,
             disabledContainerColor = Color.White,
-            focusedBorderColor = Color.Black,
-            unfocusedBorderColor = Color.Blue        ),
+//            focusedBorderColor = Color.Black,
+//            unfocusedBorderColor = Color.Blue
+        ),
     )
 }
 
