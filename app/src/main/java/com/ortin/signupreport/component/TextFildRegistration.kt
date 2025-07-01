@@ -56,22 +56,22 @@ fun TextFildRegistration(
         modifier = Modifier
             .background(BackgroundColor)
             .fillMaxWidth()
-            .height(80.dp)
+            .height(85.dp)
     ) {
         BasicTextField(
             value = textValue.value,
             onValueChange = onValueChange,
             textStyle = TextStyle(
                 color = Color.Black,
-                fontWeight = FontWeight.Bold,
-                fontSize = 17.sp
+                fontWeight = FontWeight.Normal,
+                fontSize = 20.sp
             ),
             modifier = Modifier
                 .fillMaxSize()
                 .padding(
                     start = 10.dp,
                     end = 10.dp,
-                    top = 20.dp,
+                    top = 15.dp,
                     bottom = 5.dp
                 ),
             cursorBrush = Brush.horizontalGradient(
@@ -97,6 +97,7 @@ fun TextFildRegistration(
                     Box(
                         modifier = Modifier
                             .size(width = 250.dp, height = 65.dp)
+                            .padding(top = 5.dp)
                     ) {
                         InnerTextField()
                     }
