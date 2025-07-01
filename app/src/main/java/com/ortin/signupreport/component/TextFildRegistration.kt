@@ -10,6 +10,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.BasicTextField
 import androidx.compose.foundation.text.KeyboardOptions
@@ -26,6 +27,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.tooling.preview.Preview
@@ -59,6 +61,11 @@ fun TextFildRegistration(
         BasicTextField(
             value = textValue.value,
             onValueChange = onValueChange,
+            textStyle = TextStyle(
+                color = Color.Black,
+                fontWeight = FontWeight.Bold,
+                fontSize = 17.sp
+            ),
             modifier = Modifier
                 .fillMaxSize()
                 .padding(
@@ -76,10 +83,9 @@ fun TextFildRegistration(
             ),
             keyboardOptions = keyboardOptions,
             singleLine = true,
-            decorationBox = { innerTextField ->
+            decorationBox = { InnerTextField ->
                 Row(
                     Modifier
-                        .fillMaxWidth()
                         .background(ButtonTextColor, RoundedCornerShape(20.dp))
                         .border(
                             brush = brush,
@@ -88,8 +94,16 @@ fun TextFildRegistration(
                         )
                         .padding(16.dp)
                 ) {
-                    innerTextField()
-                    Spacer(modifier = Modifier.padding(3.dp))
+                    Box(
+                        modifier = Modifier
+                            .size(width = 250.dp, height = 65.dp)
+                    ) {
+                        InnerTextField()
+                    }
+                    Spacer(
+                        modifier = Modifier
+                            .width(30.dp)
+                    )
                     if (eyeCheck) {
                         RegistrationToggleButton()
                     }
