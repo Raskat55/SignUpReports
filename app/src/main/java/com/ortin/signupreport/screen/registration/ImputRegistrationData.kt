@@ -40,7 +40,7 @@ fun ImputRigistrationData() {
             modifier = Modifier
                 .fillMaxWidth()
                 .background(BackgroundColor)
-                .padding(start = 17.dp, end = 17.dp, top = 70.dp)
+                .padding(start = 17.dp, end = 17.dp, top = 130.dp)
                 .shadow(5.dp, RoundedCornerShape(20.dp))
         ) {
             Column(
