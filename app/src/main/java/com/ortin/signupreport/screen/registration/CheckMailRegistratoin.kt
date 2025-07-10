@@ -15,11 +15,14 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.shadow
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import com.ortin.signupreport.component.CheckMailLinkedText
 import com.ortin.signupreport.presentation.component.ConfirmButton
 import com.ortin.signupreport.ui.theme.BackgroundColor
+import com.ortin.signupreport.ui.theme.ButtonColor
 
 @Composable
 fun CheckMailRegistration(modifier: Modifier = Modifier) {
@@ -43,7 +46,15 @@ fun CheckMailRegistration(modifier: Modifier = Modifier) {
                     .padding(15.dp)
             ) {
                 // рабочая область
-                Text("")
+                Text(
+                    text = "Step 3/4",
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(top = 10.dp, end = 15.dp),
+                    fontSize = 14.sp,
+                    textAlign = TextAlign.Right,
+                    color = ButtonColor
+                )
                 Text("")
                 Row(modifier = Modifier) {
                     //поля для ввода цифр

@@ -26,6 +26,7 @@ import com.ortin.signupreport.component.TextFildRegistration
 import com.ortin.signupreport.presentation.component.ConfirmButton
 import com.ortin.signupreport.presentation.component.LogoWithBackground
 import com.ortin.signupreport.ui.theme.BackgroundColor
+import com.ortin.signupreport.ui.theme.ButtonColor
 
 @Composable
 fun ImputRigistrationData() {
@@ -55,7 +56,8 @@ fun ImputRigistrationData() {
                         .fillMaxWidth()
                         .padding(top = 15.dp, end = 15.dp),
                     fontSize = 14.sp,
-                    textAlign = TextAlign.Right
+                    textAlign = TextAlign.Right,
+                    color = ButtonColor
                 )
                 Text(
                     text = "Enter your details to\n\tcomplete the registration",
