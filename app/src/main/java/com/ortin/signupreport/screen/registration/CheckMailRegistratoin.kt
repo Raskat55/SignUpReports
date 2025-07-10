@@ -11,6 +11,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.unit.dp
+import com.ortin.signupreport.presentation.component.LogoWithBackground
 import com.ortin.signupreport.ui.theme.BackgroundColor
 
 @Composable
@@ -26,6 +27,6 @@ fun CheckMailRegistration(modifier: Modifier = Modifier) {
             .shadow(5.dp, RoundedCornerShape(20.dp))){
 
         }
-
+        LogoWithBackground(modifier = Modifier.padding(top = 120.dp))
     }
 }
