@@ -5,6 +5,7 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.KeyboardOptions
@@ -20,8 +21,8 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.ortin.signupreport.component.InfoText
 import com.ortin.signupreport.component.TextFildRegistration
-import com.ortin.signupreport.component.infoText
 import com.ortin.signupreport.presentation.component.ConfirmButton
 import com.ortin.signupreport.ui.theme.BackgroundColor
 
@@ -110,11 +111,12 @@ fun ImputRigistrationData() {
             Box(
                 modifier = Modifier
                     .fillMaxWidth()
+                    .height(60.dp)
                     .background(BackgroundColor),
                 contentAlignment = Alignment.Center
 
             ) {
-                infoText()
+                InfoText()
             }
         }
     }
