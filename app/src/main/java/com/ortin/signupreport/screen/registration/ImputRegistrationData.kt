@@ -121,7 +121,14 @@ fun ImputRigistrationData() {
             }
         }
     }
-    LogoWithBackground(modifier = Modifier)
+    Box(
+        modifier = Modifier
+            .padding(top = 50.dp)
+            .fillMaxWidth(),
+        contentAlignment = Alignment.Center
+    ) {
+        LogoWithBackground(modifier = Modifier)
+    }
 }
 
 @Preview
