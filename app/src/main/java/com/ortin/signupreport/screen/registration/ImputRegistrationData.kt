@@ -24,6 +24,7 @@ import androidx.compose.ui.unit.sp
 import com.ortin.signupreport.component.InfoText
 import com.ortin.signupreport.component.TextFildRegistration
 import com.ortin.signupreport.presentation.component.ConfirmButton
+import com.ortin.signupreport.presentation.component.LogoWithBackground
 import com.ortin.signupreport.ui.theme.BackgroundColor
 
 @Composable
@@ -39,7 +40,7 @@ fun ImputRigistrationData() {
             modifier = Modifier
                 .fillMaxWidth()
                 .background(BackgroundColor)
-                .padding(start = 17.dp, end = 17.dp, top = 50.dp)
+                .padding(start = 17.dp, end = 17.dp, top = 70.dp)
                 .shadow(5.dp, RoundedCornerShape(20.dp))
         ) {
             Column(
@@ -120,6 +121,7 @@ fun ImputRigistrationData() {
             }
         }
     }
+    LogoWithBackground(modifier = Modifier)
 }
 
 @Preview

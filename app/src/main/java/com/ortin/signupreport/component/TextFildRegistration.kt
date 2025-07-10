@@ -149,6 +149,7 @@ fun RegistrationToggleButton() {
                         .fillMaxSize()
                         .size(24.dp)
                 )
+
             } else {
                 Icon(
                     painter = painterResource(R.drawable.eye_slash),
