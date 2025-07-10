@@ -10,6 +10,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Card
+import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -38,7 +39,8 @@ fun CheckMailRegistration(modifier: Modifier = Modifier) {
                 .background(BackgroundColor)
                 .size(width = 350.dp, height = 730.dp)
                 .padding(start = 17.dp, end = 17.dp, top = 100.dp)
-                .shadow(5.dp, RoundedCornerShape(20.dp))
+                .shadow(5.dp, RoundedCornerShape(20.dp)),
+            colors = CardDefaults.cardColors(BackgroundColor)
         ) {
             Column(
                 modifier = Modifier
