@@ -21,6 +21,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.ortin.signupreport.component.TextFildRegistration
+import com.ortin.signupreport.component.infoText
 import com.ortin.signupreport.presentation.component.ConfirmButton
 import com.ortin.signupreport.ui.theme.BackgroundColor
 
@@ -86,7 +87,7 @@ fun ImputRigistrationData() {
 
                 TextFildRegistration(
                     "Password",
-                    keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Password,),
+                    keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Password),
                     eyeCheck = true
                 )
             }
@@ -105,6 +106,15 @@ fun ImputRigistrationData() {
                     modifier = Modifier
                         .fillMaxWidth()
                 )
+            }
+            Box(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .background(BackgroundColor),
+                contentAlignment = Alignment.Center
+
+            ) {
+                infoText()
             }
         }
     }
