@@ -27,6 +27,7 @@ import androidx.compose.ui.unit.sp
 import com.ortin.signupreport.R
 import com.ortin.signupreport.presentation.component.LogoWithBackground
 import com.ortin.signupreport.ui.theme.BackgroundColor
+import com.ortin.signupreport.ui.theme.ButtonColor
 
 
 @Composable
@@ -63,7 +64,8 @@ fun RegistrationRole() {
                             .fillMaxWidth()
                             .padding(top = 10.dp, end = 15.dp),
                         fontSize = 14.sp,
-                        textAlign = TextAlign.Right
+                        textAlign = TextAlign.Right,
+                        color = ButtonColor
                     )
                     Box(
                         modifier = Modifier
