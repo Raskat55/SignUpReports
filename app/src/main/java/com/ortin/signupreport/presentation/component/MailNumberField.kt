@@ -4,9 +4,9 @@ package com.ortin.signupreport.presentation.component
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.text.BasicTextField
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.saveable.rememberSaveable
@@ -33,7 +33,7 @@ fun MailNumberField(modifier: Modifier) {
     Box(
         modifier = Modifier
             .background(BackgroundColor)
-            .size(60.dp)
+            .size(70.dp)
     ) {
         BasicTextField(
             value = textValue.value,
@@ -42,21 +42,14 @@ fun MailNumberField(modifier: Modifier) {
                 color = Color.Black, fontWeight = FontWeight.Normal, fontSize = 20.sp
             ),
             modifier = Modifier
-                .fillMaxSize(),
+                .fillMaxSize()
+                .padding(5.dp),
             cursorBrush = brush,
             singleLine = true,
             decorationBox = { InnerTextField ->
                 InnerTextField()
-                Text(
-                    text =  "",
-                    modifier = Modifier
-                        .background(BackgroundColor),
-                    color = Color.Black,
-                    fontSize = 12.sp,
-                    fontWeight = FontWeight.Bold
-                )
-
-            })
+            }
+        )
     }
 }
 
