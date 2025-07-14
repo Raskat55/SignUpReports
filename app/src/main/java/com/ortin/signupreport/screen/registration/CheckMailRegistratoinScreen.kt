@@ -16,17 +16,20 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.shadow
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.ortin.signupreport.component.CheckMailLinkedText
 import com.ortin.signupreport.presentation.component.ConfirmButton
+import com.ortin.signupreport.presentation.component.LogoWithBackground
 import com.ortin.signupreport.ui.theme.BackgroundColor
 import com.ortin.signupreport.ui.theme.ButtonColor
 
 @Composable
-fun CheckMailRegistration(modifier: Modifier = Modifier) {
+fun CheckMailRegistrationScreen(modifier: Modifier = Modifier) {
     Box(
         modifier = modifier
             .fillMaxSize()
@@ -37,15 +40,16 @@ fun CheckMailRegistration(modifier: Modifier = Modifier) {
             modifier = Modifier
                 .fillMaxWidth()
                 .background(BackgroundColor)
-                .size(width = 350.dp, height = 730.dp)
-                .padding(start = 17.dp, end = 17.dp, top = 100.dp)
+                .size(width = 350.dp, height = 820.dp)
+                .padding(start = 17.dp, end = 17.dp, top = 150.dp)
                 .shadow(5.dp, RoundedCornerShape(20.dp)),
             colors = CardDefaults.cardColors(BackgroundColor)
         ) {
             Column(
                 modifier = Modifier
                     .background(BackgroundColor)
-                    .padding(15.dp)
+                    .padding(15.dp),
+                horizontalAlignment = Alignment.CenterHorizontally
             ) {
                 // рабочая область
                 Text(
@@ -57,7 +61,16 @@ fun CheckMailRegistration(modifier: Modifier = Modifier) {
                     textAlign = TextAlign.Right,
                     color = ButtonColor
                 )
-                Text("")
+                Text(
+                    "Сheck your e-mail",
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(10.dp),
+                    fontSize = 25.sp,
+                    fontWeight = FontWeight.Bold,
+                    textAlign = TextAlign.Center,
+                    color = Color.Black
+                )
                 Row(modifier = Modifier) {
                     //поля для ввода цифр
 
@@ -67,18 +80,17 @@ fun CheckMailRegistration(modifier: Modifier = Modifier) {
                     buttonText = "Confirm",
                     buttonWidth = 320.dp,
                     buttonHeight = 56.dp,
-                    modifier = Modifier
-                        .fillMaxWidth()
+                    modifier = Modifier.fillMaxWidth()
                 )
             }
 
         }
-//        LogoWithBackground(modifier = Modifier.padding(top = 60.dp))
+        LogoWithBackground(modifier = Modifier.padding(top = 70.dp))
     }
 }
 
 @Preview
 @Composable
 private fun CheckMail() {
-    CheckMailRegistration()
+    CheckMailRegistrationScreen()
 }

@@ -16,14 +16,16 @@ import androidx.compose.ui.unit.sp
 import com.ortin.signupreport.ui.theme.ButtonColor
 
 @Composable
-fun CheckMailLinkedText(modifier: Modifier = Modifier) {
+fun CheckMailLinkedText(
+    modifier: Modifier = Modifier
+) {
     Text(
         modifier = modifier.padding(start = 20.dp, end = 20.dp),
         fontSize = 14.sp,
         fontWeight = FontWeight.Black,
         textAlign = TextAlign.Center,
         text = buildAnnotatedString {
-            append("We just send you a code to your/n ")
+            append("We just send you a code to your \n ")
             withLink(
                 LinkAnnotation.Url(
                     url = "https://cloud.avbinvest.com/",
