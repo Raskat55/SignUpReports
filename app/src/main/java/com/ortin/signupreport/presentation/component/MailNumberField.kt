@@ -6,6 +6,7 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.text.BasicTextField
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.saveable.rememberSaveable
@@ -43,10 +44,17 @@ fun MailNumberField(modifier: Modifier) {
             modifier = Modifier
                 .fillMaxSize(),
             cursorBrush = brush,
-//            keyboardOptions,
             singleLine = true,
             decorationBox = { InnerTextField ->
-
+                InnerTextField()
+                Text(
+                    text =  "",
+                    modifier = Modifier
+                        .background(BackgroundColor),
+                    color = Color.Black,
+                    fontSize = 12.sp,
+                    fontWeight = FontWeight.Bold
+                )
 
             })
     }
