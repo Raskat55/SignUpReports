@@ -12,6 +12,7 @@ import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.saveable.rememberSaveable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Brush
@@ -39,8 +40,10 @@ fun MailNumberField() {
         modifier = Modifier
             .background(BackgroundColor)
             .size(60.dp)
-            .shadow(elevation = 5.dp,
-                shape = RoundedCornerShape(18.dp))
+            .shadow(
+                elevation = 5.dp,
+                shape = RoundedCornerShape(18.dp)
+            )
     ) {
         BasicTextField(
             value = textValue.value,
@@ -62,7 +65,7 @@ fun MailNumberField() {
                             width = 2.dp,
                             shape = RoundedCornerShape(18.dp)
                         ),
-//                    contentAligment = Alignment.Center
+                    contentAlignment = Alignment.Center
                 ) {
                     InnerTextField()
                 }
