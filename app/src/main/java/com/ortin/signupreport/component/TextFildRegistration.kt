@@ -23,6 +23,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
@@ -92,12 +93,17 @@ fun TextFildRegistration(
                             width = 2.dp,
                             shape = RoundedCornerShape(20.dp)
                         )
-                        .padding(16.dp)
+                        .padding(16.dp),
+                    verticalAlignment = Alignment.CenterVertically
                 ) {
                     Box(
                         modifier = Modifier
                             .size(width = 250.dp, height = 65.dp)
-                            .padding(top = 5.dp)
+                            .padding(
+                                top = 5.dp,
+                                start = 15.dp
+                            ),
+                        contentAlignment = Alignment.CenterStart
                     ) {
                         InnerTextField()
                     }
