@@ -11,7 +11,7 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.ortin.signupreport.screen.registration.CheckMailRegistrationScreen
+import com.ortin.signupreport.screen.registration.ImputRigistrationData
 import com.ortin.signupreport.ui.theme.BackgroundColor
 import com.ortin.signupreport.ui.theme.SignUpReportTheme
 
@@ -37,5 +37,5 @@ class MainActivity : ComponentActivity() {
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview(modifier: Modifier = Modifier) {
-    CheckMailRegistrationScreen()
+    ImputRigistrationData()
 }
