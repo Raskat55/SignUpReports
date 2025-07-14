@@ -1,6 +1,7 @@
 package com.ortin.signupreport.screen.registration
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -25,6 +26,7 @@ import androidx.compose.ui.unit.sp
 import com.ortin.signupreport.component.CheckMailLinkedText
 import com.ortin.signupreport.presentation.component.ConfirmButton
 import com.ortin.signupreport.presentation.component.LogoWithBackground
+import com.ortin.signupreport.presentation.component.MailNumberField
 import com.ortin.signupreport.ui.theme.BackgroundColor
 import com.ortin.signupreport.ui.theme.ButtonColor
 
@@ -71,15 +73,23 @@ fun CheckMailRegistrationScreen(modifier: Modifier = Modifier) {
                     textAlign = TextAlign.Center,
                     color = Color.Black
                 )
-                Row(modifier = Modifier) {
+                Row(
+                    modifier = Modifier
+                        .fillMaxWidth(),
+                    horizontalArrangement = Arrangement.SpaceEvenly
+                ) {
                     //поля для ввода цифр
+                    MailNumberField()
+                    MailNumberField()
+                    MailNumberField()
+                    MailNumberField()
 
                 }
                 CheckMailLinkedText()
                 ConfirmButton(
                     buttonText = "Confirm",
                     buttonWidth = 320.dp,
-                    buttonHeight = 56.dp,
+                    buttonHeight = 60.dp,
                     modifier = Modifier.fillMaxWidth()
                 )
             }
