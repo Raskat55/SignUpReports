@@ -24,7 +24,7 @@ import com.ortin.signupreport.ui.theme.GradientRed
 
 
 @Composable
-fun MailNumberField() {
+fun MailNumberField(modifier: Modifier) {
     val brush = Brush.horizontalGradient(listOf(GradientBlue, GradientRed, GradientGreen))
     val textValue = rememberSaveable { mutableStateOf(" ") }
     var onValueChange = { text: String -> textValue.value = text }
@@ -42,11 +42,7 @@ fun MailNumberField() {
             ),
             modifier = Modifier
                 .fillMaxSize(),
-            cursorBrush = Brush.horizontalGradient(
-                listOf(
-                    GradientBlue, GradientRed, GradientGreen
-                )
-            ),
+            cursorBrush = brush,
 //            keyboardOptions,
             singleLine = true,
             decorationBox = { InnerTextField ->
@@ -58,6 +54,6 @@ fun MailNumberField() {
 
 @Preview
 @Composable
-fun ImputRigistrationDataPreview(modifier: Modifier = Modifier) {
-    MailNumberField()
+fun MailNumberFieldPreview(modifier: Modifier = Modifier) {
+    MailNumberField(modifier)
 }
