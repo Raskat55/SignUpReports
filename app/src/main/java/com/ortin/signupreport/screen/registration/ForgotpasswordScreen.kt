@@ -112,7 +112,7 @@ fun ForgotpasswordScreen(modifier: Modifier = Modifier) {
                 )
                 Spacer(
                     modifier = Modifier
-                        .height(70.dp)
+                        .height(50.dp)
                 )
                 ConfirmButton(
                     buttonText = "Login",
