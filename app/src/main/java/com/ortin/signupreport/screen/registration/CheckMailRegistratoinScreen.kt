@@ -113,7 +113,7 @@ fun CheckMailRegistrationScreen(modifier: Modifier = Modifier) {
         LogoWithBackground(modifier = Modifier.padding(top = 70.dp))
         Text(
             modifier = modifier.padding(
-                bottom = 10.dp,
+                bottom = 15.dp,
                 top = 890.dp
             ),
             fontSize = 14.sp,
