@@ -115,7 +115,7 @@ fun ForgotpasswordScreen(modifier: Modifier = Modifier) {
                         .height(50.dp)
                 )
                 ConfirmButton(
-                    buttonText = "Login",
+                    buttonText = "Send",
                     buttonWidth = 200.dp,
                     buttonHeight = 65.dp,
                     modifier = Modifier
