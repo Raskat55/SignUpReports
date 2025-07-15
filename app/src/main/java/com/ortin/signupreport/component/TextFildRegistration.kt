@@ -101,7 +101,7 @@ fun TextFildRegistration(
                             .size(width = 250.dp, height = 65.dp)
                             .padding(
                                 top = 5.dp,
-                                start = 15.dp
+                                start = 5.dp
                             ),
                         contentAlignment = Alignment.CenterStart
                     ) {
@@ -122,7 +122,7 @@ fun TextFildRegistration(
             text = nameLabel,
             modifier = Modifier
                 .padding(
-                    start = 40.dp,
+                    start = 50.dp,
                     top = 5.dp
                 )
                 .background(BackgroundColor),

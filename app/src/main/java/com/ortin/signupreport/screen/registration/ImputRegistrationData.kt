@@ -40,7 +40,7 @@ fun ImputRigistrationData() {
             modifier = Modifier
                 .fillMaxWidth()
                 .background(BackgroundColor)
-                .padding(start = 17.dp, end = 17.dp, top = 130.dp)
+                .padding(start = 17.dp, end = 17.dp, top = 140.dp)
                 .shadow(5.dp, RoundedCornerShape(20.dp))
         ) {
             Column(
@@ -108,6 +108,7 @@ fun ImputRigistrationData() {
                     buttonHeight = 56.dp,
                     modifier = Modifier
                         .fillMaxWidth()
+                        .padding(top = 5.dp)
                 )
             }
             Box(
@@ -124,7 +125,7 @@ fun ImputRigistrationData() {
     }
     Box(
         modifier = Modifier
-            .padding(top = 50.dp)
+            .padding(top = 60.dp)
             .fillMaxWidth(),
         contentAlignment = Alignment.Center
     ) {
