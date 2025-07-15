@@ -19,13 +19,13 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Color
-import com.ortin.signupreport.R
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.ortin.signupreport.R
 import com.ortin.signupreport.presentation.component.ConfirmButton
 import com.ortin.signupreport.presentation.component.LogoWithBackground
 import com.ortin.signupreport.ui.theme.BackgroundColor
@@ -94,24 +94,37 @@ fun RequestSubmittedScreen(modifier: Modifier = Modifier) {
                     modifier = Modifier
                         .fillMaxWidth()
                         .padding(10.dp)
-                        .height(152.dp)
-                ){
+                        .height(152.dp),
+                    contentAlignment = Alignment.Center
+                ) {
                     Image(
                         painter = painterResource(R.drawable.letter3_2),
                         contentDescription = null,
-                        modifier
+                        modifier = Modifier
                             .size(108.dp, 112.dp)
                     )
                 }
                 Spacer(
                     modifier = Modifier
-                        .height(310.dp)
+                        .height(25.dp)
                 )
                 ConfirmButton(
                     buttonText = "Confirm",
                     buttonWidth = 320.dp,
                     buttonHeight = 60.dp,
                     modifier = Modifier.fillMaxWidth()
+                )
+                Spacer(
+                    modifier = Modifier
+                        .height(25.dp)
+                )
+                /* for navigation */
+                Text(
+                    "Go to login page",
+                    fontSize = 14.sp,
+                    fontWeight = FontWeight.Normal,
+                    textAlign = TextAlign.Center,
+                    color = Color.Black
                 )
             }
 
@@ -123,6 +136,6 @@ fun RequestSubmittedScreen(modifier: Modifier = Modifier) {
 
 @Preview
 @Composable
-private fun RequestSubmittedScreenPreview(modifier: Modifier) {
-    RequestSubmittedScreen(modifier)
+private fun RequestSubmittedScreenPreview() {
+    RequestSubmittedScreen()
 }
