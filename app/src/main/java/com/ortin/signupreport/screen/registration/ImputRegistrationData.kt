@@ -21,6 +21,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.ortin.signupreport.component.BottonTextCardComponent
 import com.ortin.signupreport.component.TextFildRegistration
 import com.ortin.signupreport.presentation.component.ConfirmButton
 import com.ortin.signupreport.presentation.component.LogoWithBackground
@@ -119,7 +120,7 @@ fun ImputRigistrationData() {
                 contentAlignment = Alignment.Center
 
             ) {
-//                InfoText() /* дописать текст */
+                BottonTextCardComponent()
             }
         }
     }

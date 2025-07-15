@@ -9,7 +9,6 @@ import androidx.compose.ui.text.buildAnnotatedString
 import androidx.compose.ui.text.withLink
 import com.ortin.signupreport.ui.theme.ButtonColor
 
-/* TODO */
 @Composable
 fun BottonTextCardComponent() {
     Text(
