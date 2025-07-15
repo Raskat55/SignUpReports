@@ -8,6 +8,7 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
@@ -121,10 +122,7 @@ fun TextFildRegistration(
         Text(
             text = nameLabel,
             modifier = Modifier
-                .padding(
-                    start = 50.dp,
-                    top = 5.dp
-                )
+                .offset(50.dp, 3.dp)
                 .background(BackgroundColor),
             color = Color.Black,
             fontSize = 12.sp,
