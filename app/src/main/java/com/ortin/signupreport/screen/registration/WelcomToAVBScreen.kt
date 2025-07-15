@@ -67,9 +67,22 @@ fun WelcomToAVBScreen(modifier: Modifier = Modifier) {
                     textAlign = TextAlign.Center,
                     color = Color.Black
                 )
+                Spacer(
+                    modifier = Modifier
+                        .height(30.dp)
+                )
                 TextFildRegistration(
                     "E-mail",
                     keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Email)
+                )
+                Spacer(
+                    modifier = Modifier
+                        .height(30.dp)
+                )
+                TextFildRegistration(
+                    "Password",
+                    keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Password),
+                    eyeCheck = true
                 )
             }
 
