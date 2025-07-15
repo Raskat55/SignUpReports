@@ -40,7 +40,7 @@ import com.ortin.signupreport.ui.theme.BackgroundColor
 import com.ortin.signupreport.ui.theme.ButtonColor
 
 @Composable
-fun WelcomToAVBScreen(modifier: Modifier = Modifier) {
+fun ForgotpasswordScreen(modifier: Modifier = Modifier) {
     Box(
         modifier = modifier
             .fillMaxSize()
@@ -72,7 +72,7 @@ fun WelcomToAVBScreen(modifier: Modifier = Modifier) {
                     fontWeight = FontWeight.Bold,
                     textAlign = TextAlign.Center,
                     color = Color.Black,
-                            text = buildAnnotatedString {
+                    text = buildAnnotatedString {
                         append("Welcom to A")
                         withStyle(
                             SpanStyle(
@@ -171,6 +171,6 @@ fun WelcomToAVBScreen(modifier: Modifier = Modifier) {
 
 @Preview
 @Composable
-private fun WelcomToAVBScreenPreview() {
-    WelcomToAVBScreen()
+private fun ForgotpasswordScreenPreview() {
+    ForgotpasswordScreen()
 }
