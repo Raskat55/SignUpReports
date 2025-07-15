@@ -19,6 +19,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.R
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
@@ -95,7 +96,12 @@ fun RequestSubmittedScreen(modifier: Modifier = Modifier) {
                         .padding(10.dp)
                         .height(152.dp)
                 ){
-                    Image(painter = )
+                    Image(
+                        painter = painterResource(R.drawable.eye),
+                        contentDescription = null,
+                        modifier
+                            .size(108.dp, 112.dp)
+                    )
                 }
                 Spacer(
                     modifier = Modifier
