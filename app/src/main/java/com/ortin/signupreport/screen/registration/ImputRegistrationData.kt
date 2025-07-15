@@ -88,7 +88,6 @@ fun ImputRigistrationData() {
                     "Phone Number",
                     keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Phone)
                 )
-
                 TextFildRegistration(
                     "Password",
                     keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Password),
