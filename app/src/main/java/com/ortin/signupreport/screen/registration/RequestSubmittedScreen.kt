@@ -65,6 +65,10 @@ fun RequestSubmittedScreen(modifier: Modifier = Modifier) {
                     fontWeight = FontWeight.Bold,
                     color = ButtonColor
                 )
+                Spacer(
+                    modifier = Modifier
+                        .height(15.dp)
+                )
                 Text(
                     "Registration Request Submitted",
                     modifier = Modifier
@@ -74,6 +78,10 @@ fun RequestSubmittedScreen(modifier: Modifier = Modifier) {
                     fontWeight = FontWeight.Bold,
                     textAlign = TextAlign.Center,
                     color = Color.Black
+                )
+                Spacer(
+                    modifier = Modifier
+                        .height(15.dp)
                 )
                 Text(
                     "Your account creation request is under review." +
@@ -86,15 +94,11 @@ fun RequestSubmittedScreen(modifier: Modifier = Modifier) {
                     textAlign = TextAlign.Center,
                     color = Color.Black
                 )
-                Spacer(
-                    modifier = Modifier
-                        .height(15.dp)
-                )
                 Box(
                     modifier = Modifier
                         .fillMaxWidth()
                         .padding(10.dp)
-                        .height(152.dp),
+                        .height(200.dp),
                     contentAlignment = Alignment.Center
                 ) {
                     Image(
@@ -106,7 +110,7 @@ fun RequestSubmittedScreen(modifier: Modifier = Modifier) {
                 }
                 Spacer(
                     modifier = Modifier
-                        .height(25.dp)
+                        .height(45.dp)
                 )
                 ConfirmButton(
                     buttonText = "Confirm",
@@ -116,7 +120,7 @@ fun RequestSubmittedScreen(modifier: Modifier = Modifier) {
                 )
                 Spacer(
                     modifier = Modifier
-                        .height(25.dp)
+                        .height(50.dp)
                 )
                 /* for navigation */
                 Text(
@@ -124,7 +128,9 @@ fun RequestSubmittedScreen(modifier: Modifier = Modifier) {
                     fontSize = 14.sp,
                     fontWeight = FontWeight.Normal,
                     textAlign = TextAlign.Center,
-                    color = Color.Black
+                    color = Color.Black,
+                    modifier = Modifier
+                        .padding(bottom = 10.dp)
                 )
             }
 
