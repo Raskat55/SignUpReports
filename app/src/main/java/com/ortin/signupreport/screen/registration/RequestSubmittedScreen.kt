@@ -19,7 +19,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.R
+import com.ortin.signupreport.R
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
@@ -97,7 +97,7 @@ fun RequestSubmittedScreen(modifier: Modifier = Modifier) {
                         .height(152.dp)
                 ){
                     Image(
-                        painter = painterResource(R.drawable.eye),
+                        painter = painterResource(R.drawable.letter3_2),
                         contentDescription = null,
                         modifier
                             .size(108.dp, 112.dp)
@@ -124,5 +124,5 @@ fun RequestSubmittedScreen(modifier: Modifier = Modifier) {
 @Preview
 @Composable
 private fun RequestSubmittedScreenPreview(modifier: Modifier) {
-    RequestSubmittedScreen()
+    RequestSubmittedScreen(modifier)
 }
