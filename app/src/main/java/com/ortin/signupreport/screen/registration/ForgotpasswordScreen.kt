@@ -121,7 +121,8 @@ fun ForgotpasswordScreen(regController: NavHostController) {
                     buttonHeight = 65.dp,
                     modifier = Modifier
                         .fillMaxWidth()
-                        .padding(start = 10.dp, end = 10.dp)
+                        .padding(start = 10.dp, end = 10.dp),
+                    onClick = { regController.navigate("WelcomToAVBScreen") }
                 )
             }
 
@@ -147,7 +148,6 @@ fun ForgotpasswordScreen(regController: NavHostController) {
                 }
             }
         )
-
     }
 }
 
