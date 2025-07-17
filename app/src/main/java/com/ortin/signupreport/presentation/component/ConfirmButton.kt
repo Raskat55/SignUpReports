@@ -20,8 +20,8 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.ortin.signupreport.ui.theme.ButtonShadow
 import com.ortin.signupreport.ui.theme.ButtonColor
+import com.ortin.signupreport.ui.theme.ButtonShadow
 import com.ortin.signupreport.ui.theme.ButtonTextColor
 
 @Composable
@@ -29,7 +29,8 @@ fun ConfirmButton(
     modifier: Modifier,
     buttonText: String,
     buttonWidth: Dp,
-    buttonHeight: Dp
+    buttonHeight: Dp,
+    onClick: () -> Unit = {}
 ) {
     Button(
         modifier = modifier
@@ -44,7 +45,7 @@ fun ConfirmButton(
             ),
         colors = ButtonDefaults.buttonColors(containerColor = ButtonColor),
         shape = RoundedCornerShape(20.dp),
-        onClick = { /*TODO*/ },
+        onClick = onClick,
     ) {
         Text(
             text = buttonText,

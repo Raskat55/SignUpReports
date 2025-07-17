@@ -131,7 +131,7 @@ fun RegistrationCard(
             .padding(5.dp)
             .shadow(5.dp, RoundedCornerShape(18.dp))
             .clickable() {
-                onClick
+                onClick()
             },
         shape = RoundedCornerShape(18.dp),
     ) {
