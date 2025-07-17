@@ -17,6 +17,7 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
@@ -76,7 +77,16 @@ fun MainScreen(regController: NavHostController) {
         MainScreenButton(
             modifier = Modifier.padding(top = 32.dp),
             buttonText = "Sign up",
-            onClick = { /* TODO */ }
+            //переход на новую страницу
+            onClick = { regController.navigate("RegistrationRole") }
         )
     }
+}
+
+@Preview
+@Composable
+private fun MainScreenMainScreenPreview() {
+    MainScreen(
+        regController = TODO()
+    )
 }

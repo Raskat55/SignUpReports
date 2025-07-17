@@ -21,6 +21,7 @@ import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
@@ -100,7 +101,7 @@ fun RegistrationRole(regController: NavHostController) {
                                 .background(BackgroundColor),
                             horizontalAlignment = Alignment.CenterHorizontally
                         ) {
-                            RegistrationCard("School or University", R.drawable.univer_1)//////
+                            RegistrationCard("School or University", R.drawable.univer_1)
                             RegistrationCard("Founder", R.drawable.idea_1)
                             RegistrationCard("Co-builder", R.drawable.hat_1)
                         }
@@ -116,8 +117,7 @@ fun RegistrationRole(regController: NavHostController) {
 fun RegistrationCard(
     name: String,
     imageId: Int,
-    modifier: Modifier = Modifier.background(BackgroundColor),
-    onClick: () -> Unit = { TODO() }
+    modifier: Modifier = Modifier.background(BackgroundColor)
 ) {
     Card(
         modifier = modifier
@@ -126,7 +126,7 @@ fun RegistrationCard(
             .padding(5.dp)
             .shadow(5.dp, RoundedCornerShape(18.dp))
             .clickable() {
-                onClick
+                TODO()
             },
         shape = RoundedCornerShape(18.dp),
     ) {
@@ -150,4 +150,12 @@ fun RegistrationCard(
             }
         }
     }
+}
+
+@Preview
+@Composable
+fun RegistrationRolePreview() {
+    RegistrationRole(
+        regController = TODO()
+    )
 }

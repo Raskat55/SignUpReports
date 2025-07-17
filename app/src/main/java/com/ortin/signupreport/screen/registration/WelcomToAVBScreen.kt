@@ -33,6 +33,7 @@ import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavHostController
 import com.ortin.signupreport.component.TextFildRegistration
 import com.ortin.signupreport.presentation.component.ConfirmButton
 import com.ortin.signupreport.presentation.component.LogoWithBackground
@@ -40,9 +41,9 @@ import com.ortin.signupreport.ui.theme.BackgroundColor
 import com.ortin.signupreport.ui.theme.ButtonColor
 
 @Composable
-fun WelcomToAVBScreen(modifier: Modifier = Modifier) {
+fun WelcomToAVBScreen(regController: NavHostController) {
     Box(
-        modifier = modifier
+        modifier = Modifier
             .fillMaxSize()
             .background(BackgroundColor),
         contentAlignment = Alignment.TopCenter
@@ -145,7 +146,7 @@ fun WelcomToAVBScreen(modifier: Modifier = Modifier) {
         }
         LogoWithBackground(modifier = Modifier.padding(top = 70.dp))
         Text(
-            modifier = modifier.padding(
+            modifier = Modifier.padding(
                 start = 20.dp, end = 20.dp,
                 top = 890.dp
             ),
@@ -172,5 +173,5 @@ fun WelcomToAVBScreen(modifier: Modifier = Modifier) {
 @Preview
 @Composable
 private fun WelcomToAVBScreenPreview() {
-    WelcomToAVBScreen()
+    WelcomToAVBScreen(regController = TODO())
 }

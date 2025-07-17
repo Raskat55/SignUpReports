@@ -25,6 +25,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavHostController
 import com.ortin.signupreport.R
 import com.ortin.signupreport.presentation.component.ConfirmButton
 import com.ortin.signupreport.presentation.component.LogoWithBackground
@@ -32,9 +33,9 @@ import com.ortin.signupreport.ui.theme.BackgroundColor
 import com.ortin.signupreport.ui.theme.ButtonColor
 
 @Composable
-fun RequestSubmittedScreen(modifier: Modifier = Modifier) {
+fun RequestSubmittedScreen(regController: NavHostController) {
     Box(
-        modifier = modifier
+        modifier = Modifier
             .fillMaxSize()
             .background(BackgroundColor),
         contentAlignment = Alignment.TopCenter
@@ -143,5 +144,5 @@ fun RequestSubmittedScreen(modifier: Modifier = Modifier) {
 @Preview
 @Composable
 private fun RequestSubmittedScreenPreview() {
-    RequestSubmittedScreen()
+    RequestSubmittedScreen(regController = TODO())
 }
