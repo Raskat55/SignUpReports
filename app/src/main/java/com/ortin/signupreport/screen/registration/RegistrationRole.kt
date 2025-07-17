@@ -101,7 +101,11 @@ fun RegistrationRole(regController: NavHostController) {
                                 .background(BackgroundColor),
                             horizontalAlignment = Alignment.CenterHorizontally
                         ) {
-                            RegistrationCard("School or University", R.drawable.univer_1)
+                            RegistrationCard(
+                                "School or University",
+                                R.drawable.univer_1,
+                                onClick = { regController.navigate("ImputRigistrationData") }
+                            )
                             RegistrationCard("Founder", R.drawable.idea_1)
                             RegistrationCard("Co-builder", R.drawable.hat_1)
                         }
@@ -117,7 +121,8 @@ fun RegistrationRole(regController: NavHostController) {
 fun RegistrationCard(
     name: String,
     imageId: Int,
-    modifier: Modifier = Modifier.background(BackgroundColor)
+    modifier: Modifier = Modifier.background(BackgroundColor),
+    onClick: () -> Unit = { }
 ) {
     Card(
         modifier = modifier
@@ -126,7 +131,7 @@ fun RegistrationCard(
             .padding(5.dp)
             .shadow(5.dp, RoundedCornerShape(18.dp))
             .clickable() {
-                TODO()
+                onClick
             },
         shape = RoundedCornerShape(18.dp),
     ) {
