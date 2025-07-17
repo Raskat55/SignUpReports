@@ -110,7 +110,7 @@ fun ImputRigistrationData(regController: NavHostController) {
                     modifier = Modifier
                         .fillMaxWidth()
                         .padding(top = 5.dp),
-                    onClick = { regController.navigate("ImputRigistrationData") }
+                    onClick = { regController.navigate("CheckMailRegistrationScreen") }
                 )
             }
             Box(

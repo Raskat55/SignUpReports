@@ -114,9 +114,10 @@ fun WelcomToAVBScreen(regController: NavHostController) {
                         text =
                             buildAnnotatedString {
                                 withLink(
-                                    LinkAnnotation.Url(
-                                        url = "https://cloud.avbinvest.com/",
-                                        TextLinkStyles(style = SpanStyle(color = ButtonColor))
+                                    LinkAnnotation.Clickable(
+                                        tag = "Forgot password?",
+                                        TextLinkStyles(style = SpanStyle(color = ButtonColor)),
+                                        { regController.navigate("ForgotpasswordScreen") }
                                     )
                                 ) {
                                     append("Forgot password?")

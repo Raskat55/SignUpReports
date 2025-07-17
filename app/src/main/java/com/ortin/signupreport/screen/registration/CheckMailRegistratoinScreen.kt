@@ -106,7 +106,8 @@ fun CheckMailRegistrationScreen(regController: NavHostController) {
                     buttonText = "Confirm",
                     buttonWidth = 320.dp,
                     buttonHeight = 60.dp,
-                    modifier = Modifier.fillMaxWidth()
+                    modifier = Modifier.fillMaxWidth(),
+                    onClick = { regController.navigate("RequestSubmittedScreen") }
                 )
             }
 
