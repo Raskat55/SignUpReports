@@ -17,16 +17,16 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavHostController
 import com.ortin.signupreport.presentation.component.MainScreenButton
 import com.ortin.signupreport.presentation.component.MainScreenLogoWithBackground
 import com.ortin.signupreport.ui.theme.BackgroundColor
 import com.ortin.signupreport.ui.theme.BlackTextColor
 
 @Composable
-fun MainScreen() {
+fun MainScreen(regController: NavHostController) {
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -79,10 +79,4 @@ fun MainScreen() {
             onClick = { /* TODO */ }
         )
     }
-}
-
-@Preview
-@Composable
-fun MainScreenPreview() {
-    MainScreen()
 }
