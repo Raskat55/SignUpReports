@@ -86,7 +86,5 @@ fun MainScreen(regController: NavHostController) {
 @Preview
 @Composable
 private fun MainScreenMainScreenPreview() {
-    MainScreen(
-        regController = TODO()
-    )
+    MainScreen(regController = TODO())
 }
