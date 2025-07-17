@@ -11,9 +11,9 @@ import com.ortin.signupreport.screen.registration.RegistrationRole
 @Composable
 fun NavigationRegistration(modifier: Modifier = Modifier) {
     val regController = rememberNavController()
-    NavHost(navController = regController, startDestination = ""){
+    NavHost(navController = regController, startDestination = "MainScreen"){
 
-        composable ( route = "StarnScreen" ){
+        composable ( route = "MainScreen" ){
             MainScreen(regController)
         }
         composable ( route = "RegistrationRole" ){

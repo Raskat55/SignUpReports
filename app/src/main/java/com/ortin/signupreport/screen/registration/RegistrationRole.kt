@@ -100,7 +100,7 @@ fun RegistrationRole(regController: NavHostController) {
                                 .background(BackgroundColor),
                             horizontalAlignment = Alignment.CenterHorizontally
                         ) {
-                            RegistrationCard("School or University", R.drawable.univer_1)
+                            RegistrationCard("School or University", R.drawable.univer_1)//////
                             RegistrationCard("Founder", R.drawable.idea_1)
                             RegistrationCard("Co-builder", R.drawable.hat_1)
                         }
