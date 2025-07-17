@@ -21,9 +21,9 @@ import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavHostController
 import com.ortin.signupreport.R
 import com.ortin.signupreport.presentation.component.LogoWithBackground
 import com.ortin.signupreport.ui.theme.BackgroundColor
@@ -31,7 +31,7 @@ import com.ortin.signupreport.ui.theme.ButtonColor
 
 
 @Composable
-fun RegistrationRole() {
+fun RegistrationRole(regController: NavHostController) {
     Box(
         Modifier
             .fillMaxHeight()
@@ -116,7 +116,8 @@ fun RegistrationRole() {
 fun RegistrationCard(
     name: String,
     imageId: Int,
-    modifier: Modifier = Modifier.background(BackgroundColor)
+    modifier: Modifier = Modifier.background(BackgroundColor),
+    onClick: () -> Unit = { TODO() }
 ) {
     Card(
         modifier = modifier
@@ -125,7 +126,7 @@ fun RegistrationCard(
             .padding(5.dp)
             .shadow(5.dp, RoundedCornerShape(18.dp))
             .clickable() {
-                TODO()
+                onClick
             },
         shape = RoundedCornerShape(18.dp),
     ) {
@@ -149,10 +150,4 @@ fun RegistrationCard(
             }
         }
     }
-}
-
-@Preview
-@Composable
-fun RegistrationRolePreview() {
-    RegistrationRole()
 }
